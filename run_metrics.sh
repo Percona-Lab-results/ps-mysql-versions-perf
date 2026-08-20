@@ -4,7 +4,7 @@
 # Usage: ./run_metrics.sh --server-dir=<path> [--read-only] [--binlog] [--thread-pool=0|1]
 #                         [--table-rows=<n>[K|M]] [--warmup=<seconds>] [--duration=<seconds>]
 #                         [--thread-list=<n,n,...>] [--pool-size-list=<n,n,...>] [--cpu-freq=<MHz>]
-#                         [--runs=<n>] [--run-start=<n>]
+#                         [--runs=<n>] [--run-start=<n>] [--datadir=<path>]
 #
 # Arguments:
 #   --server-dir=<path>  - (Required) Path to the server installation directory.
@@ -26,6 +26,8 @@
 #   --runs=<n>           - (Optional) Number of runs per iteration (default: 1)
 #   --run-start=<n>      - (Optional) Start run number (default: 1); each run prepends
 #                          "run<N>_" to the results file names
+#   --datadir=<path>     - (Optional) Base directory for MySQL data directories; must be
+#                          on NVMe storage (default: /home/bogdan.degtyariov/servers/data)
 #
 # Examples:
 #   ./run_metrics.sh --server-dir=~/servers/Percona-Server-8.4.10-10-Linux.x86_64.glibc2.35
@@ -40,8 +42,8 @@ DB_PASS="password"
 DB_DATABASE="sbtest"
 DB_PORT="3306"
 
-# Server locations
-DATADIR_BASE="/home/bogdan.degtyariov/mysql-nvme/data"
+# Server locations, overridden by --datadir
+DATADIR_BASE="/home/bogdan.degtyariov/servers/data"
 
 # Buffer pool tiers (GB), overridden by --pool-size-list
 POOL_SIZES=(2 12 32)
@@ -59,7 +61,7 @@ usage() {
     echo "Usage: $0 --server-dir=<path> [--read-only] [--binlog] [--thread-pool=0|1]" >&2
     echo "          [--table-rows=<n>[K|M]] [--warmup=<seconds>] [--duration=<seconds>]" >&2
     echo "          [--thread-list=<n,n,...>] [--pool-size-list=<n,n,...>] [--cpu-freq=<MHz>]" >&2
-    echo "          [--runs=<n>] [--run-start=<n>]" >&2
+    echo "          [--runs=<n>] [--run-start=<n>] [--datadir=<path>]" >&2
     exit 1
 }
 
@@ -116,6 +118,7 @@ RUN_START="1"
 for arg in "$@"; do
     case "$arg" in
         --server-dir=*)  SERVER_DIR="${arg#*=}" ;;
+        --datadir=*)     DATADIR_BASE="${arg#*=}" ;;
         --read-only)     IS_READ_ONLY="1" ;;
         --read-only=*)   IS_READ_ONLY=$(parse_bool "${arg#*=}") || exit 1 ;;
         --binlog)        ENABLE_BINLOG="1" ;;
@@ -146,6 +149,12 @@ if [ ! -d "$SERVER_DIR" ]; then
     exit 1
 fi
 
+DATADIR_BASE="${DATADIR_BASE%/}"
+if [ -z "$DATADIR_BASE" ]; then
+    echo "ERROR: --datadir requires a non-empty path" >&2
+    exit 1
+fi
+
 # --- DETECT DBMS NAME & VERSION FROM SERVER DIR ---
 # e.g. Percona-Server-8.4.10-10-Linux.x86_64.glibc2.35 -> name "Percona-Server", version "8.4.10-10"
 #      mysql-9.7.0-linux-glibc2.28-x86_64             -> name "mysql", version "9.7.0"
@@ -161,11 +170,27 @@ fi
 
 ADMIN_TOOL="mysqladmin"
 
+# --- CHECK DATADIR_BASE IS ON NVME STORAGE ---
+mkdir -p "$DATADIR_BASE"
+SRC_DEV=$(df --output=source "$DATADIR_BASE" 2>/dev/null | tail -n1)
+if [[ "$SRC_DEV" != /dev/* ]]; then
+    echo "ERROR: Cannot determine block device for DATADIR_BASE: $DATADIR_BASE (got: ${SRC_DEV:-none})" >&2
+    exit 1
+fi
+# Walk up from the filesystem source (partition/LVM/etc.) to the physical disk
+NVME_DISK=$(lsblk -srno NAME "$SRC_DEV" 2>/dev/null | tail -n1)
+if [[ "$NVME_DISK" != nvme* ]]; then
+    echo "ERROR: DATADIR_BASE is not on NVMe storage: $DATADIR_BASE" >&2
+    echo "       Filesystem device: $SRC_DEV (physical disk: ${NVME_DISK:-unknown})" >&2
+    exit 1
+fi
+
 # Pin CPU frequency for stable benchmark results
 sudo cpupower frequency-set -g performance -d "${CPU_FREQ_MHZ}MHz" -u "${CPU_FREQ_MHZ}MHz" > /dev/null
 
 echo "============= Running benchmarks for ${DBMS_NAME}:${DBMS_VER} ============="
 echo "Server dir:  $SERVER_DIR"
+echo "Datadir:     $DATADIR_BASE (NVMe disk: $NVME_DISK)"
 echo "CPU freq:    ${CPU_FREQ_MHZ} MHz"
 echo "Thread pool: $([ "$ENABLE_THREAD_POOL" -eq 1 ] && echo "ENABLED" || echo "DISABLED")"
 
