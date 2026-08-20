@@ -264,18 +264,26 @@ start_server() {
   # Start mysqld in background
   "$MYSQLD" --defaults-file="$CONFIG" --datadir="$DATADIR" --pid-file="$PID_FILE" \
     --user=$(whoami) &
+  local MYSQLD_BG_PID=$!
 
-  # Wait a moment for PID file to be created
-  sleep 15
+  # Probe for the PID file for up to 3 minutes
+  local PID_WAIT_TIMEOUT=180
+  local WAITED=0
+  while [ ! -f "$PID_FILE" ]; do
+    if ! kill -0 "$MYSQLD_BG_PID" 2>/dev/null; then
+      echo "ERROR: mysqld exited before creating the PID file"
+      exit 1
+    fi
+    if [ "$WAITED" -ge "$PID_WAIT_TIMEOUT" ]; then
+      echo "ERROR: Failed to start mysqld (PID file not created within ${PID_WAIT_TIMEOUT}s)"
+      exit 1
+    fi
+    sleep 2
+    WAITED=$(( WAITED + 2 ))
+    echo "Waiting for PID file... (${WAITED}s/${PID_WAIT_TIMEOUT}s)"
+  done
 
-  cat $PID_FILE
-
-  if [ ! -f "$PID_FILE" ]; then
-    echo "ERROR: Failed to start mysqld (PID file not created)"
-    exit 1
-  fi
-
-  echo "mysqld started with PID: $(cat $PID_FILE)"
+  echo "mysqld started with PID: $(cat "$PID_FILE")"
 }
 
 initialize_datadir() {
