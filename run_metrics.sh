@@ -16,6 +16,7 @@
 #   --thread-pool[=0|1]  - (Optional) Enable thread pool (default: true)
 #   --table-rows=<n>     - (Optional) Rows per table (default: 5M).
 #                          Supports K (thousands) and M (millions) suffixes, e.g. 500K, 5M.
+#                          The value as passed is used in result file names: run<N>_<ROWS>_*
 #   --warmup=<seconds>   - (Optional) Read-write warmup time in seconds (default: 600)
 #   --duration=<seconds> - (Optional) Benchmark duration in seconds (default: 900)
 #   --thread-list=<list> - (Optional) Comma-separated sysbench thread counts
@@ -53,6 +54,7 @@ THREADS=(1 4 16 32 64 128 256 512 1024)
 
 # --- DEBUG SETTINGS ---
 TABLE_ROWS=5000000
+TABLE_ROWS_LABEL="5M"   # used in result file names: run<N>_<ROWS>_*
 WARMUP_TIME=600
 DURATION=900
 
@@ -125,7 +127,7 @@ for arg in "$@"; do
         --binlog=*)      ENABLE_BINLOG=$(parse_bool "${arg#*=}") || exit 1 ;;
         --thread-pool)   ENABLE_THREAD_POOL="1" ;;
         --thread-pool=*) ENABLE_THREAD_POOL=$(parse_bool "${arg#*=}") || exit 1 ;;
-        --table-rows=*)  TABLE_ROWS=$(parse_rows "${arg#*=}") || exit 1 ;;
+        --table-rows=*)  TABLE_ROWS=$(parse_rows "${arg#*=}") || exit 1; TABLE_ROWS_LABEL="${arg#*=}" ;;
         --warmup=*)      WARMUP_TIME=$(parse_uint "${arg#*=}" "number of seconds") || exit 1 ;;
         --duration=*)    DURATION=$(parse_uint "${arg#*=}" "number of seconds") || exit 1 ;;
         --cpu-freq=*)    CPU_FREQ_MHZ=$(parse_uint "${arg#*=}" "CPU frequency in MHz") || exit 1 ;;
@@ -837,7 +839,7 @@ for SIZE in "${POOL_SIZES[@]}"; do
   RUN_END=$(( RUN_START + NUM_RUNS - 1 ))
   for THREAD in "${THREADS[@]}"; do
     for (( RUN=RUN_START; RUN<=RUN_END; RUN++ )); do
-      FILE_PREFIX="${LOG_DIR}/run${RUN}_Tier${SIZE}G_RW_${THREAD}th"
+      FILE_PREFIX="${LOG_DIR}/run${RUN}_${TABLE_ROWS_LABEL}_Tier${SIZE}G_RW_${THREAD}th"
       echo "   >>> Testing ${THREAD} Threads (run ${RUN} of ${RUN_START}..${RUN_END})..."
 
       start_metrics "$FILE_PREFIX"
