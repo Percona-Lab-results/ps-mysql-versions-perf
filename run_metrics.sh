@@ -451,11 +451,25 @@ generate_config() {
 
     if [ "$ENABLE_THREAD_POOL" -eq 1 ]; then
         echo "" >> "$CFG"
-        echo "# --- Thread Pool (Percona Server) ------------------------------------------" >> "$CFG"
-        echo "thread_handling                 = pool-of-threads" >> "$CFG"
-        echo "thread_pool_size                = 80                # match physical core count" >> "$CFG"
-        echo "thread_pool_max_threads         = 2000" >> "$CFG"
-        echo "thread_pool_oversubscribe       = 3" >> "$CFG"
+        if [[ "${DBMS_NAME,,}" == percona* ]]; then
+            echo "# --- Thread Pool (Percona Server) ------------------------------------------" >> "$CFG"
+            echo "thread_handling                 = pool-of-threads" >> "$CFG"
+            echo "thread_pool_size                = 80                # match physical core count" >> "$CFG"
+            echo "thread_pool_max_threads         = 2000" >> "$CFG"
+            echo "thread_pool_oversubscribe       = 3" >> "$CFG"
+        elif [[ "${DBMS_NAME,,}" == mysql ]] && \
+             [ "$(printf '%s\n' 26.7.0 "$DBMS_VER" | sort -V | head -n1)" == "26.7.0" ]; then
+            echo "# --- Thread Pool (MySQL 26.7.0+ plugin) -------------------------------------" >> "$CFG"
+            echo "#thread_handling                = pool-of-threads   # Percona Server only" >> "$CFG"
+            echo "plugin-load-add                 = thread_pool.so" >> "$CFG"
+            echo "thread_pool_size                = 80                # match physical core count" >> "$CFG"
+            echo "thread_pool_max_active_query_threads = 2000        # ~ Percona thread_pool_max_threads" >> "$CFG"
+            echo "thread_pool_query_threads_per_group  = 4           # ~ Percona thread_pool_oversubscribe=3" >> "$CFG"
+        else
+            echo "# --- Thread Pool (not supported by ${DBMS_NAME} ${DBMS_VER}) ----------------" >> "$CFG"
+            echo "#thread_handling                = pool-of-threads   # Percona Server only" >> "$CFG"
+            echo "WARNING: thread pool requested but not supported by ${DBMS_NAME} ${DBMS_VER}; leaving it commented out in ${CFG}" >&2
+        fi
         echo "" >> "$CFG"
     fi
 
