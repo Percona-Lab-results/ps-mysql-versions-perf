@@ -1,0 +1,42 @@
+1787307633.089	Threadpool_average_hp_queue_wait_us	avg: 101.210, min: 0.000, max: 145915.000, dev: 916.937, cnt: 1367934192
+1787307633.089	Threadpool_average_queue_wait_us	avg: 730.097, min: 0.000, max: 23322569.000, dev: 29171.472, cnt: 153030515
+1787307633.089	Threadpool_idle_threads	587
+1787307633.089	Threadpool_requests_starved_in_queue	0
+1787307633.089	Threadpool_requests_waiting_in_hp_queue	0
+1787307633.089	Threadpool_requests_waiting_in_queue	242
+1787307633.089	Threadpool_threads	672
+1787307634.193	Threadpool_average_hp_queue_wait_us	avg: 101.210, min: 0.000, max: 145915.000, dev: 916.937, cnt: 1367934192
+1787307634.193	Threadpool_average_queue_wait_us	avg: 743.641, min: 0.000, max: 23322569.000, dev: 29739.039, cnt: 153041933
+1787307634.193	Threadpool_idle_threads	505
+1787307634.193	Threadpool_requests_starved_in_queue	0
+1787307634.193	Threadpool_requests_waiting_in_hp_queue	0
+1787307634.193	Threadpool_requests_waiting_in_queue	449
+1787307634.193	Threadpool_threads	672
+1787307638.287	Threadpool_average_hp_queue_wait_us	avg: 101.210, min: 0.000, max: 145915.000, dev: 916.937, cnt: 1367934192
+1787307638.287	Threadpool_average_queue_wait_us	avg: 746.986, min: 0.000, max: 23322569.000, dev: 29886.095, cnt: 153087523
+1787307638.287	Threadpool_idle_threads	532
+1787307638.287	Threadpool_requests_starved_in_queue	0
+1787307638.287	Threadpool_requests_waiting_in_hp_queue	0
+1787307638.287	Threadpool_requests_waiting_in_queue	201
+1787307638.287	Threadpool_threads	672
+1787307639.390	Threadpool_average_hp_queue_wait_us	avg: 101.210, min: 0.000, max: 145915.000, dev: 916.937, cnt: 1367934192
+1787307639.390	Threadpool_average_queue_wait_us	avg: 749.039, min: 0.000, max: 23322569.000, dev: 30010.948, cnt: 153175453
+1787307639.390	Threadpool_idle_threads	623
+1787307639.390	Threadpool_requests_starved_in_queue	0
+1787307639.390	Threadpool_requests_waiting_in_hp_queue	0
+1787307639.390	Threadpool_requests_waiting_in_queue	90
+1787307639.390	Threadpool_threads	672
+1787307640.485	Threadpool_average_hp_queue_wait_us	avg: 101.210, min: 0.000, max: 145915.000, dev: 916.937, cnt: 1367934192
+1787307640.485	Threadpool_average_queue_wait_us	avg: 750.378, min: 0.000, max: 23322569.000, dev: 30101.470, cnt: 153188905
+1787307640.485	Threadpool_idle_threads	645
+1787307640.485	Threadpool_requests_starved_in_queue	0
+1787307640.485	Threadpool_requests_waiting_in_hp_queue	0
+1787307640.485	Threadpool_requests_waiting_in_queue	43
+1787307640.485	Threadpool_threads	672
+1787307641.557	Threadpool_average_hp_queue_wait_us	avg: 101.210, min: 0.000, max: 145915.000, dev: 916.937, cnt: 1367934192
+1787307641.557	Threadpool_average_queue_wait_us	avg: 750.805, min: 0.000, max: 23322569.000, dev: 30128.372, cnt: 153200117
+1787307641.557	Threadpool_idle_threads	671
+1787307641.557	Threadpool_requests_starved_in_queue	0
+1787307641.557	Threadpool_requests_waiting_in_hp_queue	0
+1787307641.557	Threadpool_requests_waiting_in_queue	0
+1787307641.557	Threadpool_threads	672

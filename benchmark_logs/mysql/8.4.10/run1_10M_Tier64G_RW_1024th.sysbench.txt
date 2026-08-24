@@ -1,0 +1,858 @@
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 1024
+Report intermediate results every 1 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+(last message repeated 1 times)
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+(last message repeated 1 times)
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: error loading module 'oltp_read_write' from file '/usr/share/sysbench/oltp_read_write.lua':
+	cannot open /usr/share/sysbench/oltp_read_write.lua: Too many open files
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+(last message repeated 2 times)
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+(last message repeated 1 times)
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: error loading module 'oltp_read_write' from file '/usr/share/sysbench/oltp_read_write.lua':
+	cannot open /usr/share/sysbench/oltp_read_write.lua: Too many open files
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+FATAL: error loading module 'oltp_read_write' from file '/usr/share/sysbench/oltp_read_write.lua':
+	cannot open /usr/share/sysbench/oltp_read_write.lua: Too many open files
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+(last message repeated 1 times)
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+FATAL: error loading module 'oltp_read_write' from file '/usr/share/sysbench/oltp_read_write.lua':
+	cannot open /usr/share/sysbench/oltp_read_write.lua: Too many open files
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+FATAL: error 2004: Can't create TCP/IP socket (24)
+(last message repeated 1 times)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+(last message repeated 1 times)
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+(last message repeated 2 times)
+FATAL: error loading module 'oltp_read_write' from file '/usr/share/sysbench/oltp_read_write.lua':
+	cannot open /usr/share/sysbench/oltp_read_write.lua: Too many open files
+(last message repeated 1 times)
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+(last message repeated 1 times)
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+(last message repeated 1 times)
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+(last message repeated 1 times)
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+(last message repeated 4 times)
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+(last message repeated 1 times)
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+(last message repeated 1 times)
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+(last message repeated 1 times)
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+(last message repeated 1 times)
+(last message repeated 1 times)
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+(last message repeated 7 times)
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: error 2004: Can't create TCP/IP socket (24)
+(last message repeated 2 times)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+(last message repeated 1 times)
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+(last message repeated 1 times)
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+(last message repeated 1 times)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+(last message repeated 7 times)
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+(last message repeated 1 times)
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+(last message repeated 1 times)
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+(last message repeated 1 times)
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+(last message repeated 2 times)
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+(last message repeated 13 times)
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+(last message repeated 1 times)
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+(last message repeated 5 times)
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+(last message repeated 1 times)
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+(last message repeated 2 times)
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+(last message repeated 1 times)
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: unable to connect to MySQL server on host '127.0.0.1', port 3306, aborting...
+FATAL: error 2004: Can't create TCP/IP socket (24)
+FATAL: `thread_init' function failed: /usr/share/sysbench/oltp_common.lua:349: connection creation failed
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+FATAL: error loading module 'oltp_common' from file '/usr/share/sysbench/oltp_common.lua':
+	cannot open /usr/share/sysbench/oltp_common.lua: Too many open files
+(last message repeated 1 times)
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+(last message repeated 5 times)
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+FATAL: /usr/share/sysbench/oltp_read_write.lua:22: module 'oltp_common' not found:
+	no field package.preload['oltp_common']
+	no file './oltp_common.lua'
+	no file './oltp_common/init.lua'
+	no file './src/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/5.1/oltp_common/init.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common.lua'
+	no file '/home/bogdan.degtyariov/.luarocks/share/lua/oltp_common/init.lua'
+	no file '/usr/local/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/lua/5.1/oltp_common.lua'
+	no file '/usr/share/sysbench/oltp_common.lua'
+	no file './oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/5.1/oltp_common.so'
+	no file '/home/bogdan.degtyariov/.luarocks/lib/lua/oltp_common.so'
+	no file '/usr/local/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/lua/5.1/oltp_common.so'
+	no file '/usr/lib/x86_64-linux-gnu/sysbench'
+(last message repeated 6 times)
+FATAL: Cannot find benchmark 'oltp_read_write': no such built-in test, file or module
+(last message repeated 96 times)
+FATAL: Thread initialization failed!

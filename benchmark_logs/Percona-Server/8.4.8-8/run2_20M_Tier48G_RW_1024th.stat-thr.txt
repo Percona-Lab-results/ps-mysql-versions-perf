@@ -1,0 +1,16 @@
+1787413491.740	Threads_cached	0
+1787413491.740	Threads_connected	922
+1787413491.740	Threads_created	1568
+1787413491.740	Threads_running	2
+1787413504.711	Threads_cached	0
+1787413504.711	Threads_connected	921
+1787413504.711	Threads_created	1593
+1787413504.711	Threads_running	5
+1787413522.389	Threads_cached	0
+1787413522.389	Threads_connected	922
+1787413522.389	Threads_created	1593
+1787413522.389	Threads_running	7
+1787413523.562	Threads_cached	0
+1787413523.562	Threads_connected	922
+1787413523.562	Threads_created	1593
+1787413523.562	Threads_running	2

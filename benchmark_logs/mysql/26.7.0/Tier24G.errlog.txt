@@ -1,0 +1,1008 @@
+2026-08-24T05:44:56.226510Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-08-24T05:44:56.544194Z 0 [Note] [MY-010098] [Server] --secure-file-priv is set to NULL. Operations related to importing and exporting data are disabled
+2026-08-24T05:44:56.544375Z 0 [Note] [MY-013932] [Server] BuildID[sha1]=0dc04109b0c4cc6f83db738a2087508cfd08b972
+2026-08-24T05:44:56.544384Z 0 [Note] [MY-010949] [Server] Basedir set to /mnt/nvme/servers/mysql-26.7.0-linux-glibc2.28-x86_64-minimal/.
+2026-08-24T05:44:56.544402Z 0 [System] [MY-010116] [Server] /home/bogdan.degtyariov/servers/mysql-26.7.0-linux-glibc2.28-x86_64-minimal/bin/mysqld (mysqld 26.7.0) starting as process 3912917
+2026-08-24T05:44:56.544433Z 0 [System] [MY-015603] [Server] MySQL Server has access to 80 logical CPUs.
+2026-08-24T05:44:56.544453Z 0 [System] [MY-015603] [Server] MySQL Server has access to 201365626880 bytes of physical memory.
+2026-08-24T05:44:56.562211Z 0 [Note] [MY-012366] [InnoDB] Using Linux native AIO
+2026-08-24T05:44:56.562516Z 0 [Note] [MY-010747] [Server] Plugin 'FEDERATED' is disabled.
+2026-08-24T05:44:56.562604Z 0 [Note] [MY-010747] [Server] Plugin 'ndbcluster' is disabled.
+2026-08-24T05:44:56.562619Z 0 [Note] [MY-010747] [Server] Plugin 'ndbinfo' is disabled.
+2026-08-24T05:44:56.562627Z 0 [Note] [MY-010747] [Server] Plugin 'ndb_transid_mysql_connection_map' is disabled.
+2026-08-24T05:44:56.564491Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-08-24T05:44:56.564545Z 1 [Note] [MY-013546] [InnoDB] Atomic write enabled
+2026-08-24T05:44:56.564555Z 1 [Note] [MY-012932] [InnoDB] PUNCH HOLE support available
+2026-08-24T05:44:56.564565Z 1 [Note] [MY-012944] [InnoDB] Uses event mutexes
+2026-08-24T05:44:56.564571Z 1 [Note] [MY-012945] [InnoDB] GCC builtin __atomic_thread_fence() is used for memory barrier
+2026-08-24T05:44:56.564578Z 1 [Note] [MY-012948] [InnoDB] Compressed tables use zlib 1.3.2
+2026-08-24T05:44:56.569825Z 1 [Note] [MY-012951] [InnoDB] Using hardware accelerated crc32 and polynomial multiplication.
+2026-08-24T05:44:56.573614Z 1 [Note] [MY-012955] [InnoDB] Initializing buffer pool, total size = 24.000000G, instances = 4, chunk size =128.000000M 
+2026-08-24T05:44:56.573637Z 1 [Note] [MY-011872] [InnoDB] Setting NUMA memory policy to MPOL_INTERLEAVE
+2026-08-24T05:44:58.987441Z 1 [Note] [MY-011874] [InnoDB] Setting NUMA memory policy to MPOL_DEFAULT
+2026-08-24T05:44:58.987492Z 1 [Note] [MY-012957] [InnoDB] Completed initialization of buffer pool
+2026-08-24T05:44:59.153262Z 1 [Note] [MY-013532] [InnoDB] Using './#ib_16384_0.dblwr' for doublewrite
+2026-08-24T05:44:59.163533Z 1 [Note] [MY-013532] [InnoDB] Using './#ib_16384_1.dblwr' for doublewrite
+2026-08-24T05:44:59.202480Z 1 [Note] [MY-013566] [InnoDB] Double write buffer files: 2, --innodb-doublewrite-files=2, segments_per_file=4
+2026-08-24T05:44:59.202500Z 1 [Note] [MY-013565] [InnoDB] Double write buffer pages per instance: 128
+2026-08-24T05:44:59.202523Z 1 [Note] [MY-013532] [InnoDB] Using './#ib_16384_0.dblwr' for doublewrite
+2026-08-24T05:44:59.204915Z 1 [Note] [MY-013549] [InnoDB] ./#ib_16384_0.dblwr size increased to 8388608 bytes from 4194304 bytes
+2026-08-24T05:44:59.204948Z 1 [Note] [MY-013532] [InnoDB] Using './#ib_16384_1.dblwr' for doublewrite
+2026-08-24T05:44:59.206639Z 1 [Note] [MY-013549] [InnoDB] ./#ib_16384_1.dblwr size increased to 16777216 bytes from 12582912 bytes
+2026-08-24T05:44:59.236565Z 1 [Note] [MY-012203] [InnoDB] Directories to scan './'
+2026-08-24T05:44:59.236587Z 1 [Note] [MY-012204] [InnoDB] Scanning './'
+2026-08-24T05:44:59.236645Z 0 [Note] [MY-011952] [InnoDB] If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2026-08-24T05:44:59.238506Z 1 [Note] [MY-012208] [InnoDB] Completed space ID check of 4 files.
+2026-08-24T05:44:59.447727Z 1 [Note] [MY-013883] [InnoDB] The latest found checkpoint is at lsn = 19305629 in redo log file ./#innodb_redo/#ib_redo5.
+2026-08-24T05:44:59.447876Z 1 [Note] [MY-013086] [InnoDB] Starting to parse redo log at lsn = 19305525, whereas checkpoint_lsn = 19305629 and start_lsn = 19305472
+2026-08-24T05:44:59.447903Z 1 [Note] [MY-016004] [InnoDB] Starting to parse redo log at lsn = 19305525, whereas checkpoint_lsn = 19305629
+2026-08-24T05:44:59.448028Z 1 [Note] [MY-012532] [InnoDB] Applying a batch of 0 redo log records ...
+2026-08-24T05:44:59.448109Z 1 [Note] [MY-012535] [InnoDB] Apply batch completed!
+2026-08-24T05:44:59.451662Z 1 [Note] [MY-013083] [InnoDB] Log background threads are being started...
+2026-08-24T05:44:59.540022Z 1 [Note] [MY-013252] [InnoDB] Using undo tablespace './undo_001'.
+2026-08-24T05:44:59.540397Z 1 [Note] [MY-013252] [InnoDB] Using undo tablespace './undo_002'.
+2026-08-24T05:44:59.540915Z 1 [Note] [MY-012910] [InnoDB] Opened 2 existing undo tablespaces.
+2026-08-24T05:44:59.540942Z 1 [Note] [MY-011980] [InnoDB] GTID recovery trx_no: 1030
+2026-08-24T05:44:59.569555Z 1 [Note] [MY-013776] [InnoDB] Parallel initialization of rseg complete
+2026-08-24T05:44:59.569590Z 1 [Note] [MY-013777] [InnoDB] Time taken to initialize rseg using 4 thread: 28 ms.
+2026-08-24T05:44:59.569643Z 1 [Note] [MY-012923] [InnoDB] Creating shared tablespace for temporary tables
+2026-08-24T05:44:59.569656Z 1 [Note] [MY-012275] [InnoDB] Need to create a new node 'ibtmp1' with expected path of './ibtmp1' of tablespace innodb_temporary.
+2026-08-24T05:44:59.569792Z 1 [Note] [MY-012265] [InnoDB] Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait...
+2026-08-24T05:44:59.575277Z 1 [Note] [MY-012266] [InnoDB] File './ibtmp1' size is now 12 MB.
+2026-08-24T05:44:59.575360Z 1 [Note] [MY-013627] [InnoDB] Scanning temp tablespace dir:'./#innodb_temp/'
+2026-08-24T05:44:59.580580Z 1 [Note] [MY-013018] [InnoDB] Created 128 and tracked 128 new rollback segment(s) in the temporary tablespace. 128 are now active.
+2026-08-24T05:44:59.581013Z 1 [Note] [MY-012976] [InnoDB] 26.7.0 started; log sequence number 19305639
+2026-08-24T05:44:59.581322Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-08-24T05:44:59.591206Z 1 [Note] [MY-011089] [Server] Data dictionary restarting version '90200'.
+2026-08-24T05:44:59.701805Z 1 [Note] [MY-012357] [InnoDB] Reading DD tablespace files
+2026-08-24T05:44:59.702571Z 1 [Note] [MY-012356] [InnoDB] Scanned 6 tablespaces. Validated 6.
+2026-08-24T05:44:59.718522Z 1 [Note] [MY-010006] [Server] Using data dictionary with version '90200'.
+2026-08-24T05:44:59.862331Z 0 [Warning] [MY-000081] [Server] option 'thread-pool-max-active-query-threads': unsigned value 2000 adjusted to 512.
+2026-08-24T05:44:59.867871Z 0 [Note] [MY-011332] [Server] Plugin mysqlx reported: 'IPv6 is available'
+2026-08-24T05:44:59.868504Z 0 [Note] [MY-011323] [Server] Plugin mysqlx reported: 'X Plugin ready for connections. bind-address: '::' port: 33060'
+2026-08-24T05:44:59.868534Z 0 [Note] [MY-011323] [Server] Plugin mysqlx reported: 'X Plugin ready for connections. socket: '/tmp/mysqlx.sock''
+2026-08-24T05:44:59.868707Z 0 [Warning] [MY-011070] [Server] 'The plugin variable thread_pool_max_active_threads' is deprecated and will be removed in a future release.
+2026-08-24T05:44:59.974133Z 0 [System] [MY-013852] [Server] Thread pool plugin started successfully with parameters: thread_pool_size = 80, thread_pool_algorithm = High Concurrency Algorithm, thread_pool_stall_limit = 6, thread_pool_prio_kickup_timer = 1000, thread_pool_max_unused_threads = 32, thread_pool_max_active_query_threads = 512, thread_pool_dedicated_listeners = 0, thread_pool_max_transactions_limit = 512, thread_pool_transaction_delay = 0, thread_pool_query_threads_per_group = 4, thread_pool_connection_report_interval = 120, thread_pool_longrun_trx_limit = 2000 ; 2000
+2026-08-24T05:44:59.974463Z 0 [Note] [MY-010990] [Server] Resource group feature shall not be available. Incompatible thread handling option.
+2026-08-24T05:45:00.059419Z 0 [Note] [MY-013911] [Server] Crash recovery finished in InnoDB engine. No attempts to commit, rollback or prepare any transactions.
+2026-08-24T05:45:00.063485Z 0 [Note] [MY-012487] [InnoDB] DDL log recovery : begin
+2026-08-24T05:45:00.063749Z 0 [Note] [MY-012488] [InnoDB] DDL log recovery : end
+2026-08-24T05:45:00.067258Z 0 [Note] [MY-012922] [InnoDB] Waiting for purge to start
+2026-08-24T05:45:00.119372Z 0 [Note] [MY-010913] [Server] You have not provided a mandatory server-id. Servers in a replication topology must have unique server-ids. Please refer to the proper server start-up parameters documentation.
+2026-08-24T05:45:00.121468Z 0 [Note] [MY-010182] [Server] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+2026-08-24T05:45:00.122935Z 0 [Note] [MY-010304] [Server] Skipping generation of SSL certificates as certificate files are present in data directory.
+2026-08-24T05:45:00.125735Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2026-08-24T05:45:00.125765Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2026-08-24T05:45:00.125775Z 0 [Warning] [MY-015696] [Server] TLS channel 'mysql_main' is not configured to require post-quantum key exchange algorithms; future TLS sessions may use a non-post-quantum key exchange algorithm because force_pqc is disabled
+2026-08-24T05:45:00.126121Z 0 [Note] [MY-010308] [Server] Skipping generation of RSA key pair through --sha256_password_auto_generate_rsa_keys as key files are present in data directory.
+2026-08-24T05:45:00.126426Z 0 [Note] [MY-010308] [Server] Skipping generation of RSA key pair through --caching_sha2_password_auto_generate_rsa_keys as key files are present in data directory.
+2026-08-24T05:45:00.127340Z 0 [Note] [MY-010252] [Server] Server hostname (bind-address): '0.0.0.0'; port: 3306
+2026-08-24T05:45:00.127359Z 0 [Note] [MY-010264] [Server]   - '0.0.0.0' resolves to '0.0.0.0';
+2026-08-24T05:45:00.127380Z 0 [Note] [MY-010251] [Server] Server socket created on IP: '0.0.0.0'.
+2026-08-24T05:45:00.127859Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/tmp' in the path is accessible to all OS users. Consider choosing a different directory.
+2026-08-24T05:45:00.147528Z 0 [Note] [MY-011025] [Repl] Failed to start replica threads for channel ''.
+2026-08-24T05:45:00.149715Z 5 [Note] [MY-010051] [Server] Event Scheduler: scheduler thread started with id 5
+2026-08-24T05:45:00.149793Z 0 [Note] [MY-011240] [Server] Plugin mysqlx reported: 'Using SSL configuration from MySQL Server'
+2026-08-24T05:45:00.150662Z 0 [Warning] [MY-015696] [Server] Plugin mysqlx reported: 'TLS channel 'mysqlx' is not configured to require post-quantum key exchange algorithms; future TLS sessions may use a non-post-quantum key exchange algorithm because force_pqc is disabled'
+2026-08-24T05:45:00.150682Z 0 [Note] [MY-011243] [Server] Plugin mysqlx reported: 'Using OpenSSL for TLS connections'
+2026-08-24T05:45:00.150824Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /tmp/mysqlx.sock
+2026-08-24T05:45:00.150907Z 0 [System] [MY-010931] [Server] /home/bogdan.degtyariov/servers/mysql-26.7.0-linux-glibc2.28-x86_64-minimal/bin/mysqld: ready for connections. Version: '26.7.0'  socket: '/tmp/mysql_benchmark.sock'  port: 3306  MySQL Community Server - GPL.
+2026-08-24T05:45:00.158182Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 0, 0, 0, 0, 0. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 0(+0), 0, 0, 0, 0, 0.
+2026-08-24T05:45:12.158522Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 72, 0, 0, 1, 71. Usr: 0(+0), 0, 2, 2, 0, 0. Adm: 20(+20), 20, 69, 49, 20, 0.
+2026-08-24T05:45:24.165915Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 0, 0, 0, 0, 0. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 20(+0), 20, 0, 0, 0, 0.
+2026-08-24T05:45:36.171051Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 0, 0, 0, 0, 0. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 20(+0), 20, 0, 0, 0, 0.
+2026-08-24T05:45:37.680442Z 0 [Warning] [MY-014084] [InnoDB] Threads are unable to reserve space in redo log which can't be reclaimed due to the 'log_checkpointer' consumer still lagging behind at LSN = 4330697316. Consider increasing innodb_redo_log_capacity.
+2026-08-24T05:45:48.176721Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 0, 0, 0, 0, 0. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 20(+0), 20, 0, 0, 0, 0.
+2026-08-24T05:45:48.420415Z 0 [Warning] [MY-014084] [InnoDB] Threads are unable to reserve space in redo log which can't be reclaimed due to the 'log_checkpointer' consumer still lagging behind at LSN = 7282268504. Consider increasing innodb_redo_log_capacity.
+2026-08-24T05:46:00.179490Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 0, 0, 0, 0, 0. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 20(+0), 20, 0, 0, 0, 0.
+2026-08-24T05:46:00.894096Z 0 [Warning] [MY-014084] [InnoDB] Threads are unable to reserve space in redo log which can't be reclaimed due to the 'log_checkpointer' consumer still lagging behind at LSN = 10639762100. Consider increasing innodb_redo_log_capacity.
+2026-08-24T05:46:12.184254Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 0, 0, 0, 0, 0. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 20(+0), 20, 0, 0, 0, 0.
+2026-08-24T05:46:12.927026Z 0 [Warning] [MY-014084] [InnoDB] Threads are unable to reserve space in redo log which can't be reclaimed due to the 'log_checkpointer' consumer still lagging behind at LSN = 13912780079. Consider increasing innodb_redo_log_capacity.
+2026-08-24T05:46:22.959368Z 0 [Warning] [MY-014084] [InnoDB] Threads are unable to reserve space in redo log which can't be reclaimed due to the 'log_checkpointer' consumer still lagging behind at LSN = 16635831943. Consider increasing innodb_redo_log_capacity.
+2026-08-24T05:46:24.194067Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 0, 0, 0, 0, 0. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 20(+0), 20, 0, 0, 0, 0.
+2026-08-24T05:46:36.018640Z 0 [Warning] [MY-014084] [InnoDB] Threads are unable to reserve space in redo log which can't be reclaimed due to the 'log_checkpointer' consumer still lagging behind at LSN = 20165829309. Consider increasing innodb_redo_log_capacity.
+2026-08-24T05:46:36.202766Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 0, 0, 0, 0, 0. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 20(+0), 20, 0, 0, 0, 0.
+2026-08-24T05:46:48.208195Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 0, 0, 0, 0, 0. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 20(+0), 20, 0, 0, 0, 0.
+2026-08-24T05:46:49.203544Z 0 [Warning] [MY-014084] [InnoDB] Threads are unable to reserve space in redo log which can't be reclaimed due to the 'log_checkpointer' consumer still lagging behind at LSN = 23746399202. Consider increasing innodb_redo_log_capacity.
+2026-08-24T05:47:00.215315Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 0, 0, 0, 0, 0. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 20(+0), 20, 0, 0, 0, 0.
+2026-08-24T05:47:00.887775Z 0 [Warning] [MY-014084] [InnoDB] Threads are unable to reserve space in redo log which can't be reclaimed due to the 'log_checkpointer' consumer still lagging behind at LSN = 26927273661. Consider increasing innodb_redo_log_capacity.
+2026-08-24T05:47:12.223210Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 0, 0, 0, 0, 0. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 20(+0), 20, 0, 0, 0, 0.
+2026-08-24T05:47:13.381126Z 0 [Warning] [MY-014084] [InnoDB] Threads are unable to reserve space in redo log which can't be reclaimed due to the 'log_checkpointer' consumer still lagging behind at LSN = 30344270612. Consider increasing innodb_redo_log_capacity.
+2026-08-24T05:47:24.228431Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 0, 0, 0, 0, 0. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 20(+0), 20, 0, 0, 0, 0.
+2026-08-24T05:47:27.586248Z 0 [Warning] [MY-014084] [InnoDB] Threads are unable to reserve space in redo log which can't be reclaimed due to the 'log_checkpointer' consumer still lagging behind at LSN = 34232738594. Consider increasing innodb_redo_log_capacity.
+2026-08-24T05:47:36.235470Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 0, 0, 0, 0, 0. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 20(+0), 20, 0, 0, 0, 0.
+2026-08-24T05:47:42.968448Z 0 [Warning] [MY-014084] [InnoDB] Threads are unable to reserve space in redo log which can't be reclaimed due to the 'log_checkpointer' consumer still lagging behind at LSN = 38451242683. Consider increasing innodb_redo_log_capacity.
+2026-08-24T05:47:48.244443Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 0, 0, 0, 0, 0. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 20(+0), 20, 0, 0, 0, 0.
+2026-08-24T05:47:58.123528Z 0 [Warning] [MY-014084] [InnoDB] Threads are unable to reserve space in redo log which can't be reclaimed due to the 'log_checkpointer' consumer still lagging behind at LSN = 42594320278. Consider increasing innodb_redo_log_capacity.
+2026-08-24T05:48:13.693560Z 0 [Warning] [MY-014084] [InnoDB] Threads are unable to reserve space in redo log which can't be reclaimed due to the 'log_checkpointer' consumer still lagging behind at LSN = 46825022093. Consider increasing innodb_redo_log_capacity.
+2026-08-24T05:49:48.247380Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 86, 0, 0, 0, 86. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 64(+44), 83, 86, 42, 64, 20.
+2026-08-24T05:50:08.079840Z 0 [Warning] [MY-014084] [InnoDB] Threads are unable to reserve space in redo log which can't be reclaimed due to the 'log_checkpointer' consumer still lagging behind at LSN = 52074772872. Consider increasing innodb_redo_log_capacity.
+2026-08-24T05:50:23.485085Z 0 [Warning] [MY-014084] [InnoDB] Threads are unable to reserve space in redo log which can't be reclaimed due to the 'log_checkpointer' consumer still lagging behind at LSN = 53711453046. Consider increasing innodb_redo_log_capacity.
+2026-08-24T05:50:39.439956Z 0 [Warning] [MY-014084] [InnoDB] Threads are unable to reserve space in redo log which can't be reclaimed due to the 'log_checkpointer' consumer still lagging behind at LSN = 55327855753. Consider increasing innodb_redo_log_capacity.
+2026-08-24T05:51:48.257358Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 0, 0, 0, 0, 0. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 64(+0), 64, 0, 0, 0, 0.
+2026-08-24T05:53:48.258435Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 0, 0, 0, 0, 0. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 64(+0), 64, 0, 0, 0, 0.
+2026-08-24T05:55:48.268596Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 0, 0, 0, 0, 0. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 64(+0), 64, 0, 0, 0, 0.
+2026-08-24T05:57:48.268545Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 0, 0, 0, 0, 0. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 64(+0), 64, 0, 0, 0, 0.
+2026-08-24T05:59:48.273939Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 68, 0, 0, 0, 68. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 1(-63), 60, 68, 131, 1, 64.
+2026-08-24T06:01:48.281741Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 372, 0, 0, 0, 372. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 1(+0), 1, 372, 372, 0, 0.
+2026-08-24T06:03:48.285146Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 369, 0, 0, 0, 369. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 1(+0), 1, 369, 369, 0, 0.
+2026-08-24T06:05:48.287163Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 371, 0, 0, 0, 371. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 1(+0), 1, 371, 371, 0, 0.
+2026-08-24T06:07:48.293801Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 372, 0, 0, 0, 372. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 1(+0), 1, 372, 372, 0, 0.
+2026-08-24T06:09:48.295498Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 370, 0, 0, 0, 370. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 1(+0), 1, 370, 370, 0, 0.
+2026-08-24T06:11:48.303375Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 370, 0, 0, 0, 370. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 1(+0), 1, 370, 370, 0, 0.
+2026-08-24T06:13:48.307579Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 373, 0, 0, 0, 373. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 1(+0), 1, 373, 373, 0, 0.
+2026-08-24T06:15:48.309431Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 344, 0, 0, 0, 344. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 4(+3), 5, 344, 341, 4, 1.
+2026-08-24T06:17:48.313253Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 370, 0, 0, 0, 370. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 4(+0), 4, 370, 370, 0, 0.
+2026-08-24T06:19:48.313987Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 370, 0, 0, 0, 370. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 4(+0), 4, 370, 370, 0, 0.
+2026-08-24T06:21:48.316829Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 372, 0, 0, 0, 372. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 4(+0), 4, 372, 372, 0, 0.
+2026-08-24T06:23:48.318317Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 370, 0, 1, 0, 369. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 4(+0), 4, 369, 369, 0, 0.
+2026-08-24T06:25:48.324146Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 369, 0, 0, 0, 370. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 4(+0), 4, 370, 370, 0, 0.
+2026-08-24T06:27:48.329322Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 370, 0, 0, 0, 370. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 4(+0), 4, 370, 370, 0, 0.
+2026-08-24T06:29:48.333438Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 341, 0, 0, 0, 341. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 0(-4), 4, 341, 345, 0, 4.
+2026-08-24T06:31:48.343124Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 387, 0, 0, 0, 387. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 16(+16), 16, 387, 371, 16, 0.
+2026-08-24T06:33:48.348586Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 369, 0, 0, 0, 369. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 16(+0), 16, 369, 369, 0, 0.
+2026-08-24T06:35:48.353323Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 369, 0, 0, 0, 369. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 16(+0), 16, 369, 369, 0, 0.
+2026-08-24T06:37:48.357802Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 370, 0, 0, 0, 370. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 17(+1), 17, 370, 369, 1, 0.
+2026-08-24T06:37:54.250820Z 0 [Warning] [MY-014084] [InnoDB] Threads are unable to reserve space in redo log which can't be reclaimed due to the 'log_checkpointer' consumer still lagging behind at LSN = 96724864831. Consider increasing innodb_redo_log_capacity.
+2026-08-24T06:39:44.454959Z 0 [Warning] [MY-014089] [InnoDB] Redo log writer is waiting for a new redo log file. Consider increasing innodb_redo_log_capacity. The current log capacity is 4294967296 bytes. The log capacity used is 4294967296 bytes.
+2026-08-24T06:39:48.362901Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 370, 0, 0, 0, 370. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 16(-1), 17, 370, 371, 0, 1.
+2026-08-24T06:41:48.369617Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 369, 0, 0, 0, 369. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 16(+0), 16, 369, 369, 0, 0.
+2026-08-24T06:43:48.371163Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 369, 0, 0, 0, 369. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 16(+0), 16, 369, 369, 0, 0.
+2026-08-24T06:45:48.373728Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 372, 0, 0, 0, 372. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 32(+16), 48, 372, 356, 32, 16.
+2026-08-24T06:47:48.376595Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 367, 0, 0, 0, 367. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 32(+0), 32, 367, 367, 0, 0.
+2026-08-24T06:48:06.263911Z 0 [Warning] [MY-014089] [InnoDB] Redo log writer is waiting for a new redo log file. Consider increasing innodb_redo_log_capacity. The current log capacity is 4294967296 bytes. The log capacity used is 4294967296 bytes.
+2026-08-24T06:49:48.377996Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 367, 0, 0, 0, 367. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 32(+0), 32, 367, 367, 0, 0.
+2026-08-24T06:51:48.385028Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 367, 0, 0, 0, 367. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 32(+0), 32, 367, 367, 0, 0.
+2026-08-24T06:53:48.391036Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 367, 0, 0, 0, 367. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 32(+0), 32, 367, 367, 0, 0.
+2026-08-24T06:55:48.392988Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 367, 0, 0, 0, 367. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 32(+0), 32, 367, 367, 0, 0.
+2026-08-24T06:57:48.396032Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 367, 0, 0, 0, 367. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 32(+0), 32, 367, 367, 0, 0.
+2026-08-24T06:59:48.398065Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 369, 0, 0, 0, 369. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 32(+0), 32, 369, 369, 0, 0.
+2026-08-24T07:01:48.398519Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 401, 0, 0, 0, 401. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 65(+33), 97, 401, 368, 65, 32.
+2026-08-24T07:03:48.399069Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 362, 0, 0, 0, 362. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 64(-1), 65, 362, 363, 0, 1.
+2026-08-24T07:05:48.401855Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 365, 0, 0, 0, 365. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 64(+0), 64, 365, 365, 0, 0.
+2026-08-24T07:07:48.407452Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 363, 0, 0, 0, 363. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 64(+0), 64, 363, 363, 0, 0.
+2026-08-24T07:09:48.416592Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 365, 0, 0, 0, 365. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 64(+0), 64, 365, 365, 0, 0.
+2026-08-24T07:11:48.417870Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 363, 0, 0, 0, 363. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 64(+0), 64, 363, 363, 0, 0.
+2026-08-24T07:13:48.421465Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 363, 0, 0, 0, 363. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 64(+0), 64, 363, 363, 0, 0.
+2026-08-24T07:15:48.430494Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 464, 0, 0, 0, 464. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 129(+65), 193, 464, 399, 129, 64.
+2026-08-24T07:17:48.437509Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 361, 0, 0, 0, 361. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 128(-1), 129, 361, 362, 0, 1.
+2026-08-24T07:19:48.440400Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 361, 0, 0, 0, 361. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 128(+0), 128, 361, 361, 0, 0.
+2026-08-24T07:21:48.445350Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 362, 0, 0, 0, 362. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 128(+0), 128, 362, 362, 0, 0.
+2026-08-24T07:23:48.447709Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 362, 0, 0, 0, 362. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 128(+0), 128, 362, 362, 0, 0.
+2026-08-24T07:25:48.448090Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 363, 0, 0, 0, 363. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 128(+0), 128, 363, 363, 0, 0.
+2026-08-24T07:27:48.448879Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 361, 0, 0, 0, 361. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 129(+1), 129, 361, 360, 1, 0.
+2026-08-24T07:29:48.451662Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 363, 0, 0, 0, 363. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 128(-1), 129, 363, 364, 0, 1.
+2026-08-24T07:31:48.452291Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 587, 0, 0, 0, 587. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 256(+128), 379, 587, 459, 256, 128.
+2026-08-24T07:33:48.461842Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 362, 0, 0, 0, 362. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 256(+0), 256, 362, 362, 0, 0.
+2026-08-24T07:35:48.462459Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 361, 0, 1, 0, 360. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 256(+0), 256, 360, 360, 0, 0.
+2026-08-24T07:37:48.471998Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 363, 0, 0, 0, 364. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 257(+1), 257, 364, 363, 1, 0.
+2026-08-24T07:39:48.473938Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 360, 0, 0, 0, 360. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 256(-1), 256, 360, 361, 0, 1.
+2026-08-24T07:41:48.475079Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 360, 0, 0, 0, 360. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 256(+0), 256, 360, 360, 0, 0.
+2026-08-24T07:43:48.476617Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 360, 0, 0, 0, 360. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 256(+0), 256, 360, 360, 0, 0.
+2026-08-24T07:45:48.476722Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 360, 0, 0, 0, 360. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 256(+0), 256, 360, 360, 0, 0.
+2026-08-24T07:46:36.817335Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 5235ms to flush 3872 and evict 2945 pages
+2026-08-24T07:46:55.122018Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4727ms to flush 3352 and evict 1187 pages
+2026-08-24T07:47:18.163263Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4102ms to flush 2916 and evict 2709 pages
+2026-08-24T07:47:48.486408Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 782, 0, 0, 0, 782. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 512(+256), 729, 782, 526, 512, 256.
+2026-08-24T07:48:41.979018Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4756ms to flush 4912 and evict 3705 pages
+2026-08-24T07:49:22.874805Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4635ms to flush 2304 and evict 2082 pages
+2026-08-24T07:49:48.495526Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 361, 0, 0, 0, 361. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 512(+0), 512, 361, 361, 0, 0.
+2026-08-24T07:49:56.058818Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4706ms to flush 2096 and evict 3632 pages
+2026-08-24T07:50:33.137012Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4199ms to flush 2028 and evict 3577 pages
+2026-08-24T07:50:47.152747Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 5069ms to flush 2036 and evict 4202 pages
+2026-08-24T07:51:02.048602Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4638ms to flush 2000 and evict 2786 pages
+2026-08-24T07:51:41.064833Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4832ms to flush 1960 and evict 2813 pages
+2026-08-24T07:51:48.500441Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 362, 0, 0, 0, 362. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 512(+0), 512, 362, 362, 0, 0.
+2026-08-24T07:51:56.573061Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 5693ms to flush 1988 and evict 3492 pages
+2026-08-24T07:52:19.665566Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4135ms to flush 2082 and evict 2120 pages
+2026-08-24T07:52:39.425596Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 5311ms to flush 2021 and evict 4251 pages
+2026-08-24T07:53:02.725473Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4863ms to flush 1988 and evict 2210 pages
+2026-08-24T07:53:13.448502Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 5115ms to flush 1974 and evict 5274 pages
+2026-08-24T07:53:23.870190Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4698ms to flush 1944 and evict 1903 pages
+2026-08-24T07:53:34.818069Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 5434ms to flush 1954 and evict 5232 pages
+2026-08-24T07:53:46.953429Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4265ms to flush 1985 and evict 1148 pages
+2026-08-24T07:53:48.500919Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 363, 0, 0, 0, 363. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 512(+0), 512, 363, 363, 0, 0.
+2026-08-24T07:54:11.341035Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4477ms to flush 1934 and evict 8702 pages
+2026-08-24T07:55:00.599722Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4528ms to flush 1998 and evict 1897 pages
+2026-08-24T07:55:43.235882Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4128ms to flush 2048 and evict 2092 pages
+2026-08-24T07:55:48.508383Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 360, 0, 0, 0, 360. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 512(+0), 512, 360, 360, 0, 0.
+2026-08-24T07:55:56.094734Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 5049ms to flush 2056 and evict 4196 pages
+2026-08-24T07:56:19.514403Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4160ms to flush 2047 and evict 6942 pages
+2026-08-24T07:56:53.757921Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4143ms to flush 2027 and evict 1064 pages
+2026-08-24T07:57:05.193014Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4066ms to flush 2006 and evict 3784 pages
+2026-08-24T07:57:48.509537Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 362, 0, 0, 0, 362. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 512(+0), 512, 362, 362, 0, 0.
+2026-08-24T07:58:08.416790Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 5071ms to flush 2018 and evict 4229 pages
+2026-08-24T07:58:31.574939Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 6087ms to flush 2020 and evict 7709 pages
+2026-08-24T07:58:43.833633Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4830ms to flush 1996 and evict 2084 pages
+2026-08-24T07:58:56.534054Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4367ms to flush 2027 and evict 5635 pages
+2026-08-24T07:59:28.309661Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4324ms to flush 1976 and evict 6781 pages
+2026-08-24T07:59:48.516878Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 362, 0, 0, 0, 362. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 512(+0), 512, 362, 362, 0, 0.
+2026-08-24T07:59:49.064117Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4211ms to flush 1990 and evict 5490 pages
+2026-08-24T08:00:51.000788Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4221ms to flush 1989 and evict 4348 pages
+2026-08-24T08:00:59.726211Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4228ms to flush 2000 and evict 1884 pages
+2026-08-24T08:01:07.790939Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 4824ms to flush 2006 and evict 3619 pages
+2026-08-24T08:01:15.534232Z 0 [Note] [MY-011953] [InnoDB] Page cleaner took 5328ms to flush 1975 and evict 3376 pages
+2026-08-24T08:01:48.521940Z 0 [Note] [MY-015509] [Server] TP conn (init: in, queue, auth, err, ok. port: managed(delta), active, opened, closed, added, dropped): Init: 1103, 386, 400, 0, 317. Usr: 0(+0), 0, 0, 0, 0, 0. Adm: 0(-512), 512, 317, 829, 0, 512.
+2026-08-24T08:02:13.557632Z 23968 [Note] [MY-010914] [Server] Aborted connection 23968 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.557683Z 23952 [Note] [MY-010914] [Server] Aborted connection 23952 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.557682Z 23998 [Note] [MY-010914] [Server] Aborted connection 23998 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.557631Z 23988 [Note] [MY-010914] [Server] Aborted connection 23988 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.557686Z 24029 [Note] [MY-010914] [Server] Aborted connection 24029 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.558568Z 23927 [Note] [MY-010914] [Server] Aborted connection 23927 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.558679Z 24026 [Note] [MY-010914] [Server] Aborted connection 24026 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.558726Z 23963 [Note] [MY-010914] [Server] Aborted connection 23963 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.558748Z 23991 [Note] [MY-010914] [Server] Aborted connection 23991 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.558776Z 23966 [Note] [MY-010914] [Server] Aborted connection 23966 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.559503Z 23955 [Note] [MY-010914] [Server] Aborted connection 23955 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.559690Z 23982 [Note] [MY-010914] [Server] Aborted connection 23982 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.559817Z 23999 [Note] [MY-010914] [Server] Aborted connection 23999 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.559895Z 24031 [Note] [MY-010914] [Server] Aborted connection 24031 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.559902Z 23946 [Note] [MY-010914] [Server] Aborted connection 23946 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.560442Z 24012 [Note] [MY-010914] [Server] Aborted connection 24012 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.560687Z 24001 [Note] [MY-010914] [Server] Aborted connection 24001 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.560797Z 24013 [Note] [MY-010914] [Server] Aborted connection 24013 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.560817Z 24017 [Note] [MY-010914] [Server] Aborted connection 24017 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.560960Z 23965 [Note] [MY-010914] [Server] Aborted connection 23965 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.561066Z 24034 [Note] [MY-010914] [Server] Aborted connection 24034 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.561365Z 24010 [Note] [MY-010914] [Server] Aborted connection 24010 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.561592Z 23981 [Note] [MY-010914] [Server] Aborted connection 23981 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.561789Z 23939 [Note] [MY-010914] [Server] Aborted connection 23939 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.561822Z 23970 [Note] [MY-010914] [Server] Aborted connection 23970 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.561922Z 23915 [Note] [MY-010914] [Server] Aborted connection 23915 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.562035Z 23994 [Note] [MY-010914] [Server] Aborted connection 23994 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.562071Z 23977 [Note] [MY-010914] [Server] Aborted connection 23977 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.562259Z 24009 [Note] [MY-010914] [Server] Aborted connection 24009 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.562512Z 23919 [Note] [MY-010914] [Server] Aborted connection 23919 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.562980Z 23942 [Note] [MY-010914] [Server] Aborted connection 23942 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.563056Z 23931 [Note] [MY-010914] [Server] Aborted connection 23931 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.563102Z 23986 [Note] [MY-010914] [Server] Aborted connection 23986 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.563193Z 24032 [Note] [MY-010914] [Server] Aborted connection 24032 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.563219Z 24000 [Note] [MY-010914] [Server] Aborted connection 24000 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.563290Z 24005 [Note] [MY-010914] [Server] Aborted connection 24005 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.563379Z 23897 [Note] [MY-010914] [Server] Aborted connection 23897 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.563464Z 24030 [Note] [MY-010914] [Server] Aborted connection 24030 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.563963Z 23985 [Note] [MY-010914] [Server] Aborted connection 23985 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.564176Z 23949 [Note] [MY-010914] [Server] Aborted connection 23949 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.564252Z 24020 [Note] [MY-010914] [Server] Aborted connection 24020 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.564272Z 23971 [Note] [MY-010914] [Server] Aborted connection 23971 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.564307Z 23909 [Note] [MY-010914] [Server] Aborted connection 23909 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.564359Z 23959 [Note] [MY-010914] [Server] Aborted connection 23959 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.564471Z 24015 [Note] [MY-010914] [Server] Aborted connection 24015 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.564625Z 24002 [Note] [MY-010914] [Server] Aborted connection 24002 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.564931Z 24008 [Note] [MY-010914] [Server] Aborted connection 24008 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.565124Z 23943 [Note] [MY-010914] [Server] Aborted connection 23943 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.565201Z 23976 [Note] [MY-010914] [Server] Aborted connection 23976 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.565328Z 23937 [Note] [MY-010914] [Server] Aborted connection 23937 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.565412Z 24003 [Note] [MY-010914] [Server] Aborted connection 24003 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.565666Z 23974 [Note] [MY-010914] [Server] Aborted connection 23974 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.565684Z 23987 [Note] [MY-010914] [Server] Aborted connection 23987 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.565766Z 23916 [Note] [MY-010914] [Server] Aborted connection 23916 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.565799Z 23899 [Note] [MY-010914] [Server] Aborted connection 23899 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.566067Z 23990 [Note] [MY-010914] [Server] Aborted connection 23990 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.566179Z 23913 [Note] [MY-010914] [Server] Aborted connection 23913 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.566243Z 23924 [Note] [MY-010914] [Server] Aborted connection 23924 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.566391Z 23945 [Note] [MY-010914] [Server] Aborted connection 23945 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.566485Z 23984 [Note] [MY-010914] [Server] Aborted connection 23984 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.566546Z 23967 [Note] [MY-010914] [Server] Aborted connection 23967 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.566707Z 23960 [Note] [MY-010914] [Server] Aborted connection 23960 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.566762Z 24011 [Note] [MY-010914] [Server] Aborted connection 24011 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.566836Z 23768 [Note] [MY-010914] [Server] Aborted connection 23768 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.567061Z 23873 [Note] [MY-010914] [Server] Aborted connection 23873 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.567152Z 23914 [Note] [MY-010914] [Server] Aborted connection 23914 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.567441Z 23972 [Note] [MY-010914] [Server] Aborted connection 23972 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.567460Z 24016 [Note] [MY-010914] [Server] Aborted connection 24016 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.567490Z 23980 [Note] [MY-010914] [Server] Aborted connection 23980 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.567544Z 23923 [Note] [MY-010914] [Server] Aborted connection 23923 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.567656Z 23874 [Note] [MY-010914] [Server] Aborted connection 23874 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.567822Z 23877 [Note] [MY-010914] [Server] Aborted connection 23877 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.567895Z 23997 [Note] [MY-010914] [Server] Aborted connection 23997 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.567906Z 23787 [Note] [MY-010914] [Server] Aborted connection 23787 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.567916Z 24006 [Note] [MY-010914] [Server] Aborted connection 24006 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.568080Z 24018 [Note] [MY-010914] [Server] Aborted connection 24018 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.568273Z 23892 [Note] [MY-010914] [Server] Aborted connection 23892 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.568442Z 23957 [Note] [MY-010914] [Server] Aborted connection 23957 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.568530Z 23910 [Note] [MY-010914] [Server] Aborted connection 23910 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.568704Z 23948 [Note] [MY-010914] [Server] Aborted connection 23948 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.568939Z 24019 [Note] [MY-010914] [Server] Aborted connection 24019 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.568987Z 23908 [Note] [MY-010914] [Server] Aborted connection 23908 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.569013Z 23978 [Note] [MY-010914] [Server] Aborted connection 23978 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.569044Z 23921 [Note] [MY-010914] [Server] Aborted connection 23921 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.569063Z 24014 [Note] [MY-010914] [Server] Aborted connection 24014 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.569148Z 23880 [Note] [MY-010914] [Server] Aborted connection 23880 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.569172Z 23898 [Note] [MY-010914] [Server] Aborted connection 23898 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.569180Z 23932 [Note] [MY-010914] [Server] Aborted connection 23932 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.569407Z 23979 [Note] [MY-010914] [Server] Aborted connection 23979 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.569554Z 23950 [Note] [MY-010914] [Server] Aborted connection 23950 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.569732Z 23951 [Note] [MY-010914] [Server] Aborted connection 23951 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.569857Z 23956 [Note] [MY-010914] [Server] Aborted connection 23956 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.569881Z 24028 [Note] [MY-010914] [Server] Aborted connection 24028 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.569966Z 23993 [Note] [MY-010914] [Server] Aborted connection 23993 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.570227Z 24004 [Note] [MY-010914] [Server] Aborted connection 24004 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.570269Z 23896 [Note] [MY-010914] [Server] Aborted connection 23896 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.570272Z 23989 [Note] [MY-010914] [Server] Aborted connection 23989 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.570326Z 23796 [Note] [MY-010914] [Server] Aborted connection 23796 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.570460Z 24033 [Note] [MY-010914] [Server] Aborted connection 24033 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.570562Z 23938 [Note] [MY-010914] [Server] Aborted connection 23938 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.570571Z 23969 [Note] [MY-010914] [Server] Aborted connection 23969 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.570589Z 23912 [Note] [MY-010914] [Server] Aborted connection 23912 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.570564Z 23929 [Note] [MY-010914] [Server] Aborted connection 23929 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.570732Z 23925 [Note] [MY-010914] [Server] Aborted connection 23925 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.570789Z 23891 [Note] [MY-010914] [Server] Aborted connection 23891 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.570822Z 23901 [Note] [MY-010914] [Server] Aborted connection 23901 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.571159Z 23954 [Note] [MY-010914] [Server] Aborted connection 23954 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.571191Z 23975 [Note] [MY-010914] [Server] Aborted connection 23975 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.571548Z 23926 [Note] [MY-010914] [Server] Aborted connection 23926 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.571583Z 23922 [Note] [MY-010914] [Server] Aborted connection 23922 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.571589Z 23962 [Note] [MY-010914] [Server] Aborted connection 23962 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.571618Z 23902 [Note] [MY-010914] [Server] Aborted connection 23902 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.571661Z 23935 [Note] [MY-010914] [Server] Aborted connection 23935 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.571738Z 23889 [Note] [MY-010914] [Server] Aborted connection 23889 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.571766Z 23992 [Note] [MY-010914] [Server] Aborted connection 23992 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.572020Z 24021 [Note] [MY-010914] [Server] Aborted connection 24021 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.572049Z 23854 [Note] [MY-010914] [Server] Aborted connection 23854 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.572133Z 23933 [Note] [MY-010914] [Server] Aborted connection 23933 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.572185Z 23995 [Note] [MY-010914] [Server] Aborted connection 23995 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.572309Z 23894 [Note] [MY-010914] [Server] Aborted connection 23894 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.572316Z 23947 [Note] [MY-010914] [Server] Aborted connection 23947 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.572347Z 23906 [Note] [MY-010914] [Server] Aborted connection 23906 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.572566Z 23851 [Note] [MY-010914] [Server] Aborted connection 23851 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.572610Z 23893 [Note] [MY-010914] [Server] Aborted connection 23893 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.572691Z 23875 [Note] [MY-010914] [Server] Aborted connection 23875 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.572781Z 23953 [Note] [MY-010914] [Server] Aborted connection 23953 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.572973Z 23920 [Note] [MY-010914] [Server] Aborted connection 23920 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.573010Z 23940 [Note] [MY-010914] [Server] Aborted connection 23940 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.573045Z 23918 [Note] [MY-010914] [Server] Aborted connection 23918 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.573204Z 23941 [Note] [MY-010914] [Server] Aborted connection 23941 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.573281Z 23930 [Note] [MY-010914] [Server] Aborted connection 23930 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.573306Z 23895 [Note] [MY-010914] [Server] Aborted connection 23895 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.573379Z 23878 [Note] [MY-010914] [Server] Aborted connection 23878 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.573378Z 23785 [Note] [MY-010914] [Server] Aborted connection 23785 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.573532Z 23861 [Note] [MY-010914] [Server] Aborted connection 23861 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.573606Z 23905 [Note] [MY-010914] [Server] Aborted connection 23905 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.573726Z 23884 [Note] [MY-010914] [Server] Aborted connection 23884 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.573812Z 23847 [Note] [MY-010914] [Server] Aborted connection 23847 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.573838Z 24007 [Note] [MY-010914] [Server] Aborted connection 24007 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.573879Z 23735 [Note] [MY-010914] [Server] Aborted connection 23735 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.573907Z 23928 [Note] [MY-010914] [Server] Aborted connection 23928 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.574064Z 23911 [Note] [MY-010914] [Server] Aborted connection 23911 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.574074Z 23888 [Note] [MY-010914] [Server] Aborted connection 23888 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.574156Z 23867 [Note] [MY-010914] [Server] Aborted connection 23867 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.574449Z 23936 [Note] [MY-010914] [Server] Aborted connection 23936 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.574450Z 23669 [Note] [MY-010914] [Server] Aborted connection 23669 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.574654Z 23882 [Note] [MY-010914] [Server] Aborted connection 23882 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.574673Z 23734 [Note] [MY-010914] [Server] Aborted connection 23734 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.574754Z 23816 [Note] [MY-010914] [Server] Aborted connection 23816 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.574772Z 23798 [Note] [MY-010914] [Server] Aborted connection 23798 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.574844Z 23836 [Note] [MY-010914] [Server] Aborted connection 23836 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.574847Z 23944 [Note] [MY-010914] [Server] Aborted connection 23944 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.574891Z 23964 [Note] [MY-010914] [Server] Aborted connection 23964 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.574897Z 23829 [Note] [MY-010914] [Server] Aborted connection 23829 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.574933Z 23714 [Note] [MY-010914] [Server] Aborted connection 23714 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.574993Z 23876 [Note] [MY-010914] [Server] Aborted connection 23876 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.575109Z 23837 [Note] [MY-010914] [Server] Aborted connection 23837 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.575274Z 23958 [Note] [MY-010914] [Server] Aborted connection 23958 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.575351Z 23779 [Note] [MY-010914] [Server] Aborted connection 23779 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.575477Z 23983 [Note] [MY-010914] [Server] Aborted connection 23983 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.575776Z 23852 [Note] [MY-010914] [Server] Aborted connection 23852 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.575822Z 23781 [Note] [MY-010914] [Server] Aborted connection 23781 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.575871Z 23849 [Note] [MY-010914] [Server] Aborted connection 23849 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.575900Z 23693 [Note] [MY-010914] [Server] Aborted connection 23693 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.575912Z 23863 [Note] [MY-010914] [Server] Aborted connection 23863 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.576008Z 23841 [Note] [MY-010914] [Server] Aborted connection 23841 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.576222Z 23862 [Note] [MY-010914] [Server] Aborted connection 23862 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.576262Z 23794 [Note] [MY-010914] [Server] Aborted connection 23794 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.576284Z 23879 [Note] [MY-010914] [Server] Aborted connection 23879 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.576381Z 23811 [Note] [MY-010914] [Server] Aborted connection 23811 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.576435Z 23755 [Note] [MY-010914] [Server] Aborted connection 23755 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.576463Z 23788 [Note] [MY-010914] [Server] Aborted connection 23788 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.576475Z 23792 [Note] [MY-010914] [Server] Aborted connection 23792 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.576556Z 23961 [Note] [MY-010914] [Server] Aborted connection 23961 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.576588Z 23870 [Note] [MY-010914] [Server] Aborted connection 23870 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.576668Z 23838 [Note] [MY-010914] [Server] Aborted connection 23838 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.576699Z 23835 [Note] [MY-010914] [Server] Aborted connection 23835 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.576844Z 24023 [Note] [MY-010914] [Server] Aborted connection 24023 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.576912Z 23843 [Note] [MY-010914] [Server] Aborted connection 23843 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.577017Z 23736 [Note] [MY-010914] [Server] Aborted connection 23736 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.577024Z 23917 [Note] [MY-010914] [Server] Aborted connection 23917 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.577081Z 23872 [Note] [MY-010914] [Server] Aborted connection 23872 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.577272Z 23859 [Note] [MY-010914] [Server] Aborted connection 23859 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.577291Z 23934 [Note] [MY-010914] [Server] Aborted connection 23934 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.577302Z 23860 [Note] [MY-010914] [Server] Aborted connection 23860 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.577405Z 23848 [Note] [MY-010914] [Server] Aborted connection 23848 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.577427Z 23871 [Note] [MY-010914] [Server] Aborted connection 23871 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.577549Z 23772 [Note] [MY-010914] [Server] Aborted connection 23772 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.577722Z 23800 [Note] [MY-010914] [Server] Aborted connection 23800 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.577753Z 23706 [Note] [MY-010914] [Server] Aborted connection 23706 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.577801Z 23832 [Note] [MY-010914] [Server] Aborted connection 23832 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.577828Z 23904 [Note] [MY-010914] [Server] Aborted connection 23904 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.577906Z 23857 [Note] [MY-010914] [Server] Aborted connection 23857 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.577908Z 23834 [Note] [MY-010914] [Server] Aborted connection 23834 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.577975Z 23761 [Note] [MY-010914] [Server] Aborted connection 23761 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.578013Z 23723 [Note] [MY-010914] [Server] Aborted connection 23723 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.578078Z 23885 [Note] [MY-010914] [Server] Aborted connection 23885 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.578139Z 23797 [Note] [MY-010914] [Server] Aborted connection 23797 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.578252Z 23853 [Note] [MY-010914] [Server] Aborted connection 23853 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.578329Z 23903 [Note] [MY-010914] [Server] Aborted connection 23903 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.578618Z 23665 [Note] [MY-010914] [Server] Aborted connection 23665 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.578623Z 23819 [Note] [MY-010914] [Server] Aborted connection 23819 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.578725Z 23677 [Note] [MY-010914] [Server] Aborted connection 23677 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.578794Z 23742 [Note] [MY-010914] [Server] Aborted connection 23742 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.578930Z 23786 [Note] [MY-010914] [Server] Aborted connection 23786 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.578936Z 23869 [Note] [MY-010914] [Server] Aborted connection 23869 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.578956Z 23690 [Note] [MY-010914] [Server] Aborted connection 23690 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.579001Z 23654 [Note] [MY-010914] [Server] Aborted connection 23654 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.579037Z 23744 [Note] [MY-010914] [Server] Aborted connection 23744 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.579093Z 23776 [Note] [MY-010914] [Server] Aborted connection 23776 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.579139Z 23773 [Note] [MY-010914] [Server] Aborted connection 23773 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.579279Z 23726 [Note] [MY-010914] [Server] Aborted connection 23726 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.579364Z 23864 [Note] [MY-010914] [Server] Aborted connection 23864 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.579402Z 23850 [Note] [MY-010914] [Server] Aborted connection 23850 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.579500Z 23750 [Note] [MY-010914] [Server] Aborted connection 23750 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.579505Z 23806 [Note] [MY-010914] [Server] Aborted connection 23806 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.579512Z 23815 [Note] [MY-010914] [Server] Aborted connection 23815 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.579613Z 23689 [Note] [MY-010914] [Server] Aborted connection 23689 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.579661Z 23784 [Note] [MY-010914] [Server] Aborted connection 23784 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.579770Z 23721 [Note] [MY-010914] [Server] Aborted connection 23721 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.579779Z 23810 [Note] [MY-010914] [Server] Aborted connection 23810 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.580076Z 23814 [Note] [MY-010914] [Server] Aborted connection 23814 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.580101Z 23764 [Note] [MY-010914] [Server] Aborted connection 23764 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.580142Z 23769 [Note] [MY-010914] [Server] Aborted connection 23769 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.580184Z 23839 [Note] [MY-010914] [Server] Aborted connection 23839 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.580311Z 23907 [Note] [MY-010914] [Server] Aborted connection 23907 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.580354Z 23883 [Note] [MY-010914] [Server] Aborted connection 23883 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.580400Z 23676 [Note] [MY-010914] [Server] Aborted connection 23676 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.580480Z 23741 [Note] [MY-010914] [Server] Aborted connection 23741 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.580482Z 23765 [Note] [MY-010914] [Server] Aborted connection 23765 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.580545Z 23866 [Note] [MY-010914] [Server] Aborted connection 23866 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.580553Z 23833 [Note] [MY-010914] [Server] Aborted connection 23833 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.580713Z 23827 [Note] [MY-010914] [Server] Aborted connection 23827 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.580765Z 23747 [Note] [MY-010914] [Server] Aborted connection 23747 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.580847Z 23782 [Note] [MY-010914] [Server] Aborted connection 23782 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.580877Z 23729 [Note] [MY-010914] [Server] Aborted connection 23729 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.580940Z 23681 [Note] [MY-010914] [Server] Aborted connection 23681 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.580965Z 23820 [Note] [MY-010914] [Server] Aborted connection 23820 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.581015Z 23743 [Note] [MY-010914] [Server] Aborted connection 23743 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.581181Z 23697 [Note] [MY-010914] [Server] Aborted connection 23697 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.581243Z 23801 [Note] [MY-010914] [Server] Aborted connection 23801 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.581383Z 23733 [Note] [MY-010914] [Server] Aborted connection 23733 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.581466Z 23855 [Note] [MY-010914] [Server] Aborted connection 23855 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.581559Z 23856 [Note] [MY-010914] [Server] Aborted connection 23856 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.581600Z 23732 [Note] [MY-010914] [Server] Aborted connection 23732 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.581900Z 23790 [Note] [MY-010914] [Server] Aborted connection 23790 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.581973Z 23705 [Note] [MY-010914] [Server] Aborted connection 23705 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.582064Z 23694 [Note] [MY-010914] [Server] Aborted connection 23694 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.582074Z 23825 [Note] [MY-010914] [Server] Aborted connection 23825 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.582132Z 23722 [Note] [MY-010914] [Server] Aborted connection 23722 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.582136Z 23767 [Note] [MY-010914] [Server] Aborted connection 23767 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.582150Z 23818 [Note] [MY-010914] [Server] Aborted connection 23818 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.582288Z 23745 [Note] [MY-010914] [Server] Aborted connection 23745 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.582291Z 23758 [Note] [MY-010914] [Server] Aborted connection 23758 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.582340Z 23668 [Note] [MY-010914] [Server] Aborted connection 23668 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.582345Z 23771 [Note] [MY-010914] [Server] Aborted connection 23771 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.582349Z 23865 [Note] [MY-010914] [Server] Aborted connection 23865 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.582401Z 23763 [Note] [MY-010914] [Server] Aborted connection 23763 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.582577Z 23778 [Note] [MY-010914] [Server] Aborted connection 23778 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.582642Z 23817 [Note] [MY-010914] [Server] Aborted connection 23817 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.582667Z 23828 [Note] [MY-010914] [Server] Aborted connection 23828 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.582813Z 23886 [Note] [MY-010914] [Server] Aborted connection 23886 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.582978Z 23868 [Note] [MY-010914] [Server] Aborted connection 23868 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.583014Z 23793 [Note] [MY-010914] [Server] Aborted connection 23793 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.583120Z 23807 [Note] [MY-010914] [Server] Aborted connection 23807 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.583135Z 23662 [Note] [MY-010914] [Server] Aborted connection 23662 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.583160Z 23791 [Note] [MY-010914] [Server] Aborted connection 23791 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.583301Z 23804 [Note] [MY-010914] [Server] Aborted connection 23804 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.583706Z 23666 [Note] [MY-010914] [Server] Aborted connection 23666 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.583730Z 23890 [Note] [MY-010914] [Server] Aborted connection 23890 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.583750Z 23830 [Note] [MY-010914] [Server] Aborted connection 23830 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.583837Z 23724 [Note] [MY-010914] [Server] Aborted connection 23724 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.583848Z 23799 [Note] [MY-010914] [Server] Aborted connection 23799 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.583866Z 23740 [Note] [MY-010914] [Server] Aborted connection 23740 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.583870Z 23777 [Note] [MY-010914] [Server] Aborted connection 23777 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.583931Z 23821 [Note] [MY-010914] [Server] Aborted connection 23821 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.583932Z 23824 [Note] [MY-010914] [Server] Aborted connection 23824 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.583993Z 23858 [Note] [MY-010914] [Server] Aborted connection 23858 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.584018Z 23812 [Note] [MY-010914] [Server] Aborted connection 23812 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.584105Z 23685 [Note] [MY-010914] [Server] Aborted connection 23685 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.584144Z 23757 [Note] [MY-010914] [Server] Aborted connection 23757 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.584230Z 23671 [Note] [MY-010914] [Server] Aborted connection 23671 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.584283Z 23719 [Note] [MY-010914] [Server] Aborted connection 23719 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.584469Z 23846 [Note] [MY-010914] [Server] Aborted connection 23846 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.584569Z 23770 [Note] [MY-010914] [Server] Aborted connection 23770 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.584591Z 23708 [Note] [MY-010914] [Server] Aborted connection 23708 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.584627Z 23658 [Note] [MY-010914] [Server] Aborted connection 23658 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.584759Z 23795 [Note] [MY-010914] [Server] Aborted connection 23795 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.584802Z 23661 [Note] [MY-010914] [Server] Aborted connection 23661 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.584937Z 23887 [Note] [MY-010914] [Server] Aborted connection 23887 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.585013Z 23840 [Note] [MY-010914] [Server] Aborted connection 23840 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.585260Z 23805 [Note] [MY-010914] [Server] Aborted connection 23805 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.585261Z 23881 [Note] [MY-010914] [Server] Aborted connection 23881 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.585421Z 23696 [Note] [MY-010914] [Server] Aborted connection 23696 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.585465Z 23687 [Note] [MY-010914] [Server] Aborted connection 23687 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.585501Z 23823 [Note] [MY-010914] [Server] Aborted connection 23823 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.585519Z 23759 [Note] [MY-010914] [Server] Aborted connection 23759 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.585525Z 23752 [Note] [MY-010914] [Server] Aborted connection 23752 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.585528Z 23720 [Note] [MY-010914] [Server] Aborted connection 23720 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.585536Z 23739 [Note] [MY-010914] [Server] Aborted connection 23739 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.585605Z 23701 [Note] [MY-010914] [Server] Aborted connection 23701 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.585615Z 23670 [Note] [MY-010914] [Server] Aborted connection 23670 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.585808Z 23709 [Note] [MY-010914] [Server] Aborted connection 23709 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.585849Z 23659 [Note] [MY-010914] [Server] Aborted connection 23659 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.585875Z 23728 [Note] [MY-010914] [Server] Aborted connection 23728 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.585998Z 23746 [Note] [MY-010914] [Server] Aborted connection 23746 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.586006Z 23753 [Note] [MY-010914] [Server] Aborted connection 23753 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.586059Z 23695 [Note] [MY-010914] [Server] Aborted connection 23695 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.586161Z 23652 [Note] [MY-010914] [Server] Aborted connection 23652 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.586344Z 23826 [Note] [MY-010914] [Server] Aborted connection 23826 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.586405Z 23760 [Note] [MY-010914] [Server] Aborted connection 23760 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.586518Z 23766 [Note] [MY-010914] [Server] Aborted connection 23766 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.586715Z 23731 [Note] [MY-010914] [Server] Aborted connection 23731 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.586760Z 23808 [Note] [MY-010914] [Server] Aborted connection 23808 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.586902Z 23845 [Note] [MY-010914] [Server] Aborted connection 23845 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.586917Z 23802 [Note] [MY-010914] [Server] Aborted connection 23802 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.587000Z 23703 [Note] [MY-010914] [Server] Aborted connection 23703 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.587078Z 23656 [Note] [MY-010914] [Server] Aborted connection 23656 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.587123Z 23684 [Note] [MY-010914] [Server] Aborted connection 23684 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.587132Z 23704 [Note] [MY-010914] [Server] Aborted connection 23704 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.587204Z 23647 [Note] [MY-010914] [Server] Aborted connection 23647 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.587244Z 23715 [Note] [MY-010914] [Server] Aborted connection 23715 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.587373Z 23707 [Note] [MY-010914] [Server] Aborted connection 23707 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.587395Z 23663 [Note] [MY-010914] [Server] Aborted connection 23663 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.587436Z 23730 [Note] [MY-010914] [Server] Aborted connection 23730 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.587472Z 23702 [Note] [MY-010914] [Server] Aborted connection 23702 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.587552Z 23831 [Note] [MY-010914] [Server] Aborted connection 23831 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.587696Z 23756 [Note] [MY-010914] [Server] Aborted connection 23756 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.587743Z 23749 [Note] [MY-010914] [Server] Aborted connection 23749 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.587798Z 23754 [Note] [MY-010914] [Server] Aborted connection 23754 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.587824Z 23774 [Note] [MY-010914] [Server] Aborted connection 23774 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.587875Z 23842 [Note] [MY-010914] [Server] Aborted connection 23842 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.588136Z 23648 [Note] [MY-010914] [Server] Aborted connection 23648 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.588155Z 23822 [Note] [MY-010914] [Server] Aborted connection 23822 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.588169Z 23780 [Note] [MY-010914] [Server] Aborted connection 23780 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.588219Z 23711 [Note] [MY-010914] [Server] Aborted connection 23711 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.588220Z 23646 [Note] [MY-010914] [Server] Aborted connection 23646 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.588370Z 23699 [Note] [MY-010914] [Server] Aborted connection 23699 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.588454Z 23710 [Note] [MY-010914] [Server] Aborted connection 23710 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.588517Z 23678 [Note] [MY-010914] [Server] Aborted connection 23678 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.588578Z 23650 [Note] [MY-010914] [Server] Aborted connection 23650 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.588584Z 23675 [Note] [MY-010914] [Server] Aborted connection 23675 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.588689Z 23674 [Note] [MY-010914] [Server] Aborted connection 23674 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.588730Z 23682 [Note] [MY-010914] [Server] Aborted connection 23682 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.588866Z 23775 [Note] [MY-010914] [Server] Aborted connection 23775 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.588879Z 23751 [Note] [MY-010914] [Server] Aborted connection 23751 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.589031Z 23718 [Note] [MY-010914] [Server] Aborted connection 23718 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.589133Z 23748 [Note] [MY-010914] [Server] Aborted connection 23748 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.589178Z 23717 [Note] [MY-010914] [Server] Aborted connection 23717 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.589282Z 23655 [Note] [MY-010914] [Server] Aborted connection 23655 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.589392Z 23809 [Note] [MY-010914] [Server] Aborted connection 23809 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.589405Z 23672 [Note] [MY-010914] [Server] Aborted connection 23672 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.589578Z 23651 [Note] [MY-010914] [Server] Aborted connection 23651 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.589577Z 23712 [Note] [MY-010914] [Server] Aborted connection 23712 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.589729Z 23727 [Note] [MY-010914] [Server] Aborted connection 23727 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.589783Z 23640 [Note] [MY-010914] [Server] Aborted connection 23640 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.589789Z 23673 [Note] [MY-010914] [Server] Aborted connection 23673 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.589969Z 23639 [Note] [MY-010914] [Server] Aborted connection 23639 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.589997Z 23680 [Note] [MY-010914] [Server] Aborted connection 23680 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.590021Z 23636 [Note] [MY-010914] [Server] Aborted connection 23636 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.590038Z 23667 [Note] [MY-010914] [Server] Aborted connection 23667 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.590053Z 23644 [Note] [MY-010914] [Server] Aborted connection 23644 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.590162Z 23635 [Note] [MY-010914] [Server] Aborted connection 23635 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.590170Z 23645 [Note] [MY-010914] [Server] Aborted connection 23645 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.590233Z 23618 [Note] [MY-010914] [Server] Aborted connection 23618 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.590259Z 23688 [Note] [MY-010914] [Server] Aborted connection 23688 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.590325Z 23629 [Note] [MY-010914] [Server] Aborted connection 23629 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.590357Z 23657 [Note] [MY-010914] [Server] Aborted connection 23657 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.590436Z 23700 [Note] [MY-010914] [Server] Aborted connection 23700 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.590560Z 23638 [Note] [MY-010914] [Server] Aborted connection 23638 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.590609Z 23725 [Note] [MY-010914] [Server] Aborted connection 23725 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.590647Z 23783 [Note] [MY-010914] [Server] Aborted connection 23783 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.590657Z 23631 [Note] [MY-010914] [Server] Aborted connection 23631 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.590686Z 23686 [Note] [MY-010914] [Server] Aborted connection 23686 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.590866Z 23692 [Note] [MY-010914] [Server] Aborted connection 23692 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.590955Z 23626 [Note] [MY-010914] [Server] Aborted connection 23626 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.591052Z 23632 [Note] [MY-010914] [Server] Aborted connection 23632 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.591068Z 23630 [Note] [MY-010914] [Server] Aborted connection 23630 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.591244Z 23813 [Note] [MY-010914] [Server] Aborted connection 23813 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.591256Z 23627 [Note] [MY-010914] [Server] Aborted connection 23627 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.591245Z 23762 [Note] [MY-010914] [Server] Aborted connection 23762 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.591302Z 23789 [Note] [MY-010914] [Server] Aborted connection 23789 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.591330Z 23844 [Note] [MY-010914] [Server] Aborted connection 23844 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.591361Z 23613 [Note] [MY-010914] [Server] Aborted connection 23613 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.591444Z 23637 [Note] [MY-010914] [Server] Aborted connection 23637 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.591503Z 23664 [Note] [MY-010914] [Server] Aborted connection 23664 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.591524Z 23621 [Note] [MY-010914] [Server] Aborted connection 23621 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.591737Z 23628 [Note] [MY-010914] [Server] Aborted connection 23628 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.591774Z 23614 [Note] [MY-010914] [Server] Aborted connection 23614 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.591775Z 23660 [Note] [MY-010914] [Server] Aborted connection 23660 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.591798Z 23616 [Note] [MY-010914] [Server] Aborted connection 23616 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.591784Z 23653 [Note] [MY-010914] [Server] Aborted connection 23653 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.591894Z 23605 [Note] [MY-010914] [Server] Aborted connection 23605 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.591904Z 23620 [Note] [MY-010914] [Server] Aborted connection 23620 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.592089Z 23602 [Note] [MY-010914] [Server] Aborted connection 23602 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.592146Z 23737 [Note] [MY-010914] [Server] Aborted connection 23737 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.592158Z 23643 [Note] [MY-010914] [Server] Aborted connection 23643 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.592147Z 23625 [Note] [MY-010914] [Server] Aborted connection 23625 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.592301Z 23597 [Note] [MY-010914] [Server] Aborted connection 23597 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.592312Z 23598 [Note] [MY-010914] [Server] Aborted connection 23598 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.592348Z 23633 [Note] [MY-010914] [Server] Aborted connection 23633 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.592470Z 23596 [Note] [MY-010914] [Server] Aborted connection 23596 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.592499Z 23738 [Note] [MY-010914] [Server] Aborted connection 23738 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.592504Z 23595 [Note] [MY-010914] [Server] Aborted connection 23595 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.592701Z 23617 [Note] [MY-010914] [Server] Aborted connection 23617 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.592808Z 23593 [Note] [MY-010914] [Server] Aborted connection 23593 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.592817Z 23603 [Note] [MY-010914] [Server] Aborted connection 23603 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.592845Z 23713 [Note] [MY-010914] [Server] Aborted connection 23713 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.592853Z 23649 [Note] [MY-010914] [Server] Aborted connection 23649 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.592985Z 23592 [Note] [MY-010914] [Server] Aborted connection 23592 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.593064Z 23641 [Note] [MY-010914] [Server] Aborted connection 23641 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.593096Z 23623 [Note] [MY-010914] [Server] Aborted connection 23623 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.593102Z 23600 [Note] [MY-010914] [Server] Aborted connection 23600 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.593258Z 23594 [Note] [MY-010914] [Server] Aborted connection 23594 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.593300Z 23589 [Note] [MY-010914] [Server] Aborted connection 23589 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.593412Z 23604 [Note] [MY-010914] [Server] Aborted connection 23604 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.593437Z 23679 [Note] [MY-010914] [Server] Aborted connection 23679 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.593438Z 23583 [Note] [MY-010914] [Server] Aborted connection 23583 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.593451Z 23587 [Note] [MY-010914] [Server] Aborted connection 23587 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.593470Z 23606 [Note] [MY-010914] [Server] Aborted connection 23606 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.593554Z 23585 [Note] [MY-010914] [Server] Aborted connection 23585 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.593614Z 23581 [Note] [MY-010914] [Server] Aborted connection 23581 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.593749Z 23622 [Note] [MY-010914] [Server] Aborted connection 23622 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.593785Z 23615 [Note] [MY-010914] [Server] Aborted connection 23615 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.593805Z 23579 [Note] [MY-010914] [Server] Aborted connection 23579 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.593986Z 23582 [Note] [MY-010914] [Server] Aborted connection 23582 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.593988Z 23691 [Note] [MY-010914] [Server] Aborted connection 23691 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.594102Z 23577 [Note] [MY-010914] [Server] Aborted connection 23577 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.594164Z 23586 [Note] [MY-010914] [Server] Aborted connection 23586 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.594187Z 23584 [Note] [MY-010914] [Server] Aborted connection 23584 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.594307Z 23576 [Note] [MY-010914] [Server] Aborted connection 23576 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.594327Z 23572 [Note] [MY-010914] [Server] Aborted connection 23572 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.594336Z 23571 [Note] [MY-010914] [Server] Aborted connection 23571 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.594376Z 23599 [Note] [MY-010914] [Server] Aborted connection 23599 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.594536Z 23624 [Note] [MY-010914] [Server] Aborted connection 23624 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.594554Z 23619 [Note] [MY-010914] [Server] Aborted connection 23619 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.594561Z 23601 [Note] [MY-010914] [Server] Aborted connection 23601 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.594570Z 23716 [Note] [MY-010914] [Server] Aborted connection 23716 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.594673Z 23634 [Note] [MY-010914] [Server] Aborted connection 23634 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.594850Z 23570 [Note] [MY-010914] [Server] Aborted connection 23570 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.594983Z 23564 [Note] [MY-010914] [Server] Aborted connection 23564 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.595180Z 23565 [Note] [MY-010914] [Server] Aborted connection 23565 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.595239Z 23590 [Note] [MY-010914] [Server] Aborted connection 23590 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.595273Z 23569 [Note] [MY-010914] [Server] Aborted connection 23569 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.595321Z 23574 [Note] [MY-010914] [Server] Aborted connection 23574 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.595334Z 23568 [Note] [MY-010914] [Server] Aborted connection 23568 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.595343Z 23698 [Note] [MY-010914] [Server] Aborted connection 23698 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.595406Z 23580 [Note] [MY-010914] [Server] Aborted connection 23580 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.595423Z 23560 [Note] [MY-010914] [Server] Aborted connection 23560 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.595449Z 23561 [Note] [MY-010914] [Server] Aborted connection 23561 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.595542Z 23591 [Note] [MY-010914] [Server] Aborted connection 23591 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.595622Z 23563 [Note] [MY-010914] [Server] Aborted connection 23563 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.595666Z 23683 [Note] [MY-010914] [Server] Aborted connection 23683 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.595675Z 23608 [Note] [MY-010914] [Server] Aborted connection 23608 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.595692Z 23573 [Note] [MY-010914] [Server] Aborted connection 23573 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.595770Z 23611 [Note] [MY-010914] [Server] Aborted connection 23611 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.595771Z 23555 [Note] [MY-010914] [Server] Aborted connection 23555 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.595866Z 23609 [Note] [MY-010914] [Server] Aborted connection 23609 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.595895Z 23567 [Note] [MY-010914] [Server] Aborted connection 23567 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.595965Z 23548 [Note] [MY-010914] [Server] Aborted connection 23548 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.596067Z 23557 [Note] [MY-010914] [Server] Aborted connection 23557 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.596114Z 23541 [Note] [MY-010914] [Server] Aborted connection 23541 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.596299Z 23549 [Note] [MY-010914] [Server] Aborted connection 23549 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.596302Z 23588 [Note] [MY-010914] [Server] Aborted connection 23588 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.596332Z 23547 [Note] [MY-010914] [Server] Aborted connection 23547 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.596347Z 23543 [Note] [MY-010914] [Server] Aborted connection 23543 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.596393Z 23642 [Note] [MY-010914] [Server] Aborted connection 23642 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.596475Z 23539 [Note] [MY-010914] [Server] Aborted connection 23539 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.596523Z 23610 [Note] [MY-010914] [Server] Aborted connection 23610 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.596700Z 23537 [Note] [MY-010914] [Server] Aborted connection 23537 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.596721Z 23535 [Note] [MY-010914] [Server] Aborted connection 23535 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.596824Z 23530 [Note] [MY-010914] [Server] Aborted connection 23530 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.596933Z 23551 [Note] [MY-010914] [Server] Aborted connection 23551 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.597140Z 23529 [Note] [MY-010914] [Server] Aborted connection 23529 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.597220Z 23528 [Note] [MY-010914] [Server] Aborted connection 23528 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.597243Z 23531 [Note] [MY-010914] [Server] Aborted connection 23531 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.597285Z 23550 [Note] [MY-010914] [Server] Aborted connection 23550 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.597369Z 23527 [Note] [MY-010914] [Server] Aborted connection 23527 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.597465Z 23546 [Note] [MY-010914] [Server] Aborted connection 23546 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.597511Z 23534 [Note] [MY-010914] [Server] Aborted connection 23534 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.597526Z 23526 [Note] [MY-010914] [Server] Aborted connection 23526 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.597719Z 23553 [Note] [MY-010914] [Server] Aborted connection 23553 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.597724Z 23522 [Note] [MY-010914] [Server] Aborted connection 23522 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.597745Z 23533 [Note] [MY-010914] [Server] Aborted connection 23533 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.597753Z 23521 [Note] [MY-010914] [Server] Aborted connection 23521 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.597784Z 23544 [Note] [MY-010914] [Server] Aborted connection 23544 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.597788Z 23525 [Note] [MY-010914] [Server] Aborted connection 23525 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.597807Z 23520 [Note] [MY-010914] [Server] Aborted connection 23520 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.598020Z 23518 [Note] [MY-010914] [Server] Aborted connection 23518 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.598056Z 23523 [Note] [MY-010914] [Server] Aborted connection 23523 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.598159Z 23517 [Note] [MY-010914] [Server] Aborted connection 23517 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.598214Z 23516 [Note] [MY-010914] [Server] Aborted connection 23516 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.598256Z 23524 [Note] [MY-010914] [Server] Aborted connection 23524 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.598278Z 23514 [Note] [MY-010914] [Server] Aborted connection 23514 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.598287Z 23515 [Note] [MY-010914] [Server] Aborted connection 23515 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.598277Z 23519 [Note] [MY-010914] [Server] Aborted connection 23519 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.598420Z 23512 [Note] [MY-010914] [Server] Aborted connection 23512 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.598470Z 23510 [Note] [MY-010914] [Server] Aborted connection 23510 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.598518Z 23509 [Note] [MY-010914] [Server] Aborted connection 23509 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.598605Z 23508 [Note] [MY-010914] [Server] Aborted connection 23508 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.598743Z 23540 [Note] [MY-010914] [Server] Aborted connection 23540 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.598757Z 23803 [Note] [MY-010914] [Server] Aborted connection 23803 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.598800Z 23559 [Note] [MY-010914] [Server] Aborted connection 23559 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.598816Z 23562 [Note] [MY-010914] [Server] Aborted connection 23562 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.598827Z 23552 [Note] [MY-010914] [Server] Aborted connection 23552 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.598925Z 23538 [Note] [MY-010914] [Server] Aborted connection 23538 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.598945Z 23513 [Note] [MY-010914] [Server] Aborted connection 23513 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.599022Z 23502 [Note] [MY-010914] [Server] Aborted connection 23502 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.599153Z 23545 [Note] [MY-010914] [Server] Aborted connection 23545 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.599228Z 23607 [Note] [MY-010914] [Server] Aborted connection 23607 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.599234Z 23507 [Note] [MY-010914] [Server] Aborted connection 23507 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.599450Z 23536 [Note] [MY-010914] [Server] Aborted connection 23536 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.599477Z 23532 [Note] [MY-010914] [Server] Aborted connection 23532 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.599491Z 23558 [Note] [MY-010914] [Server] Aborted connection 23558 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.599564Z 23506 [Note] [MY-010914] [Server] Aborted connection 23506 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.599682Z 23556 [Note] [MY-010914] [Server] Aborted connection 23556 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.599746Z 23501 [Note] [MY-010914] [Server] Aborted connection 23501 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.599785Z 23504 [Note] [MY-010914] [Server] Aborted connection 23504 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.599790Z 23575 [Note] [MY-010914] [Server] Aborted connection 23575 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.599871Z 23566 [Note] [MY-010914] [Server] Aborted connection 23566 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.599875Z 23542 [Note] [MY-010914] [Server] Aborted connection 23542 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.599896Z 23578 [Note] [MY-010914] [Server] Aborted connection 23578 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.599919Z 23554 [Note] [MY-010914] [Server] Aborted connection 23554 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.599928Z 23612 [Note] [MY-010914] [Server] Aborted connection 23612 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.600011Z 23505 [Note] [MY-010914] [Server] Aborted connection 23505 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.600177Z 23511 [Note] [MY-010914] [Server] Aborted connection 23511 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.600216Z 23503 [Note] [MY-010914] [Server] Aborted connection 23503 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.600252Z 23500 [Note] [MY-010914] [Server] Aborted connection 23500 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.600499Z 23499 [Note] [MY-010914] [Server] Aborted connection 23499 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.600510Z 23498 [Note] [MY-010914] [Server] Aborted connection 23498 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.600546Z 23490 [Note] [MY-010914] [Server] Aborted connection 23490 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.600564Z 23491 [Note] [MY-010914] [Server] Aborted connection 23491 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.600571Z 23494 [Note] [MY-010914] [Server] Aborted connection 23494 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.600612Z 23492 [Note] [MY-010914] [Server] Aborted connection 23492 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.600667Z 23489 [Note] [MY-010914] [Server] Aborted connection 23489 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.600732Z 23495 [Note] [MY-010914] [Server] Aborted connection 23495 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.600928Z 23485 [Note] [MY-010914] [Server] Aborted connection 23485 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.600939Z 23493 [Note] [MY-010914] [Server] Aborted connection 23493 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.600944Z 23488 [Note] [MY-010914] [Server] Aborted connection 23488 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.601011Z 23484 [Note] [MY-010914] [Server] Aborted connection 23484 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.601055Z 23497 [Note] [MY-010914] [Server] Aborted connection 23497 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.601092Z 23482 [Note] [MY-010914] [Server] Aborted connection 23482 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.601103Z 23487 [Note] [MY-010914] [Server] Aborted connection 23487 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.601155Z 23478 [Note] [MY-010914] [Server] Aborted connection 23478 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.601174Z 23480 [Note] [MY-010914] [Server] Aborted connection 23480 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.601422Z 23476 [Note] [MY-010914] [Server] Aborted connection 23476 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.601462Z 23481 [Note] [MY-010914] [Server] Aborted connection 23481 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.601484Z 23472 [Note] [MY-010914] [Server] Aborted connection 23472 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.601570Z 23471 [Note] [MY-010914] [Server] Aborted connection 23471 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.601595Z 23483 [Note] [MY-010914] [Server] Aborted connection 23483 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.601607Z 23479 [Note] [MY-010914] [Server] Aborted connection 23479 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.601658Z 23475 [Note] [MY-010914] [Server] Aborted connection 23475 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.601728Z 23468 [Note] [MY-010914] [Server] Aborted connection 23468 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.601870Z 23464 [Note] [MY-010914] [Server] Aborted connection 23464 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.601917Z 23474 [Note] [MY-010914] [Server] Aborted connection 23474 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.601942Z 23466 [Note] [MY-010914] [Server] Aborted connection 23466 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.601994Z 23461 [Note] [MY-010914] [Server] Aborted connection 23461 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.602000Z 23470 [Note] [MY-010914] [Server] Aborted connection 23470 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.602033Z 23463 [Note] [MY-010914] [Server] Aborted connection 23463 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.602070Z 23467 [Note] [MY-010914] [Server] Aborted connection 23467 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.602089Z 23496 [Note] [MY-010914] [Server] Aborted connection 23496 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.602128Z 23459 [Note] [MY-010914] [Server] Aborted connection 23459 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.602246Z 23457 [Note] [MY-010914] [Server] Aborted connection 23457 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.602252Z 23465 [Note] [MY-010914] [Server] Aborted connection 23465 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.602253Z 23453 [Note] [MY-010914] [Server] Aborted connection 23453 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.602327Z 23477 [Note] [MY-010914] [Server] Aborted connection 23477 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.602365Z 23452 [Note] [MY-010914] [Server] Aborted connection 23452 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.602371Z 23451 [Note] [MY-010914] [Server] Aborted connection 23451 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.602462Z 23450 [Note] [MY-010914] [Server] Aborted connection 23450 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.602468Z 23448 [Note] [MY-010914] [Server] Aborted connection 23448 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.602497Z 23469 [Note] [MY-010914] [Server] Aborted connection 23469 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.602511Z 23473 [Note] [MY-010914] [Server] Aborted connection 23473 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.602559Z 23454 [Note] [MY-010914] [Server] Aborted connection 23454 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.602588Z 23449 [Note] [MY-010914] [Server] Aborted connection 23449 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.602660Z 23444 [Note] [MY-010914] [Server] Aborted connection 23444 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.602713Z 23458 [Note] [MY-010914] [Server] Aborted connection 23458 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.602721Z 23446 [Note] [MY-010914] [Server] Aborted connection 23446 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.602759Z 23460 [Note] [MY-010914] [Server] Aborted connection 23460 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.602961Z 23447 [Note] [MY-010914] [Server] Aborted connection 23447 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.603062Z 23462 [Note] [MY-010914] [Server] Aborted connection 23462 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.603112Z 23445 [Note] [MY-010914] [Server] Aborted connection 23445 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.603113Z 23486 [Note] [MY-010914] [Server] Aborted connection 23486 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.603178Z 23455 [Note] [MY-010914] [Server] Aborted connection 23455 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.603320Z 23456 [Note] [MY-010914] [Server] Aborted connection 23456 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.603343Z 23443 [Note] [MY-010914] [Server] Aborted connection 23443 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.603397Z 23437 [Note] [MY-010914] [Server] Aborted connection 23437 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.603442Z 23436 [Note] [MY-010914] [Server] Aborted connection 23436 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.603471Z 23441 [Note] [MY-010914] [Server] Aborted connection 23441 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.603473Z 23434 [Note] [MY-010914] [Server] Aborted connection 23434 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.603591Z 23440 [Note] [MY-010914] [Server] Aborted connection 23440 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.603625Z 23433 [Note] [MY-010914] [Server] Aborted connection 23433 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.603638Z 23439 [Note] [MY-010914] [Server] Aborted connection 23439 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.603728Z 23438 [Note] [MY-010914] [Server] Aborted connection 23438 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.603778Z 23431 [Note] [MY-010914] [Server] Aborted connection 23431 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.603823Z 23429 [Note] [MY-010914] [Server] Aborted connection 23429 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.603882Z 23425 [Note] [MY-010914] [Server] Aborted connection 23425 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.603957Z 23427 [Note] [MY-010914] [Server] Aborted connection 23427 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604127Z 23430 [Note] [MY-010914] [Server] Aborted connection 23430 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604172Z 23423 [Note] [MY-010914] [Server] Aborted connection 23423 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604183Z 23442 [Note] [MY-010914] [Server] Aborted connection 23442 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604188Z 23435 [Note] [MY-010914] [Server] Aborted connection 23435 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604196Z 23424 [Note] [MY-010914] [Server] Aborted connection 23424 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604199Z 23426 [Note] [MY-010914] [Server] Aborted connection 23426 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604199Z 23419 [Note] [MY-010914] [Server] Aborted connection 23419 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604238Z 23413 [Note] [MY-010914] [Server] Aborted connection 23413 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604239Z 23422 [Note] [MY-010914] [Server] Aborted connection 23422 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604297Z 23414 [Note] [MY-010914] [Server] Aborted connection 23414 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604342Z 23420 [Note] [MY-010914] [Server] Aborted connection 23420 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604354Z 23417 [Note] [MY-010914] [Server] Aborted connection 23417 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604484Z 23411 [Note] [MY-010914] [Server] Aborted connection 23411 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604541Z 23416 [Note] [MY-010914] [Server] Aborted connection 23416 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604587Z 23412 [Note] [MY-010914] [Server] Aborted connection 23412 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604643Z 23410 [Note] [MY-010914] [Server] Aborted connection 23410 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604688Z 23415 [Note] [MY-010914] [Server] Aborted connection 23415 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604694Z 23408 [Note] [MY-010914] [Server] Aborted connection 23408 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604735Z 23407 [Note] [MY-010914] [Server] Aborted connection 23407 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604885Z 23418 [Note] [MY-010914] [Server] Aborted connection 23418 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604908Z 23404 [Note] [MY-010914] [Server] Aborted connection 23404 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604938Z 23403 [Note] [MY-010914] [Server] Aborted connection 23403 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.604981Z 23421 [Note] [MY-010914] [Server] Aborted connection 23421 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.605159Z 23400 [Note] [MY-010914] [Server] Aborted connection 23400 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.605214Z 23399 [Note] [MY-010914] [Server] Aborted connection 23399 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.605306Z 23405 [Note] [MY-010914] [Server] Aborted connection 23405 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.605336Z 23432 [Note] [MY-010914] [Server] Aborted connection 23432 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.605356Z 23406 [Note] [MY-010914] [Server] Aborted connection 23406 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.605380Z 23397 [Note] [MY-010914] [Server] Aborted connection 23397 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.605466Z 23398 [Note] [MY-010914] [Server] Aborted connection 23398 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.605510Z 23393 [Note] [MY-010914] [Server] Aborted connection 23393 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.605580Z 23395 [Note] [MY-010914] [Server] Aborted connection 23395 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.605609Z 23401 [Note] [MY-010914] [Server] Aborted connection 23401 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.605663Z 23392 [Note] [MY-010914] [Server] Aborted connection 23392 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.605741Z 23428 [Note] [MY-010914] [Server] Aborted connection 23428 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.605812Z 23409 [Note] [MY-010914] [Server] Aborted connection 23409 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.605840Z 23394 [Note] [MY-010914] [Server] Aborted connection 23394 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.605993Z 23386 [Note] [MY-010914] [Server] Aborted connection 23386 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.606004Z 23387 [Note] [MY-010914] [Server] Aborted connection 23387 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.606005Z 23389 [Note] [MY-010914] [Server] Aborted connection 23389 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.606025Z 23385 [Note] [MY-010914] [Server] Aborted connection 23385 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.606027Z 23402 [Note] [MY-010914] [Server] Aborted connection 23402 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.606132Z 23384 [Note] [MY-010914] [Server] Aborted connection 23384 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.606140Z 23390 [Note] [MY-010914] [Server] Aborted connection 23390 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.606181Z 23383 [Note] [MY-010914] [Server] Aborted connection 23383 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.606200Z 23379 [Note] [MY-010914] [Server] Aborted connection 23379 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.606237Z 23388 [Note] [MY-010914] [Server] Aborted connection 23388 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.606430Z 23396 [Note] [MY-010914] [Server] Aborted connection 23396 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.606435Z 23375 [Note] [MY-010914] [Server] Aborted connection 23375 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.606501Z 23382 [Note] [MY-010914] [Server] Aborted connection 23382 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.606520Z 23381 [Note] [MY-010914] [Server] Aborted connection 23381 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.606563Z 23373 [Note] [MY-010914] [Server] Aborted connection 23373 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.606573Z 23374 [Note] [MY-010914] [Server] Aborted connection 23374 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.606589Z 23377 [Note] [MY-010914] [Server] Aborted connection 23377 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.606673Z 23378 [Note] [MY-010914] [Server] Aborted connection 23378 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.606686Z 23376 [Note] [MY-010914] [Server] Aborted connection 23376 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.606739Z 23391 [Note] [MY-010914] [Server] Aborted connection 23391 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.606814Z 23368 [Note] [MY-010914] [Server] Aborted connection 23368 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.606820Z 23366 [Note] [MY-010914] [Server] Aborted connection 23366 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.606869Z 23369 [Note] [MY-010914] [Server] Aborted connection 23369 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.607042Z 23372 [Note] [MY-010914] [Server] Aborted connection 23372 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.607083Z 23363 [Note] [MY-010914] [Server] Aborted connection 23363 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.607117Z 23361 [Note] [MY-010914] [Server] Aborted connection 23361 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.607179Z 23371 [Note] [MY-010914] [Server] Aborted connection 23371 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.607181Z 23360 [Note] [MY-010914] [Server] Aborted connection 23360 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.607259Z 23362 [Note] [MY-010914] [Server] Aborted connection 23362 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.607271Z 23365 [Note] [MY-010914] [Server] Aborted connection 23365 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.607317Z 23380 [Note] [MY-010914] [Server] Aborted connection 23380 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.607330Z 23370 [Note] [MY-010914] [Server] Aborted connection 23370 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.607560Z 23354 [Note] [MY-010914] [Server] Aborted connection 23354 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.607571Z 23359 [Note] [MY-010914] [Server] Aborted connection 23359 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.607561Z 23356 [Note] [MY-010914] [Server] Aborted connection 23356 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.607615Z 23358 [Note] [MY-010914] [Server] Aborted connection 23358 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.607619Z 23367 [Note] [MY-010914] [Server] Aborted connection 23367 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.607650Z 23349 [Note] [MY-010914] [Server] Aborted connection 23349 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.607697Z 23348 [Note] [MY-010914] [Server] Aborted connection 23348 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.607782Z 23346 [Note] [MY-010914] [Server] Aborted connection 23346 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.607991Z 23355 [Note] [MY-010914] [Server] Aborted connection 23355 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.608005Z 23351 [Note] [MY-010914] [Server] Aborted connection 23351 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.608148Z 23350 [Note] [MY-010914] [Server] Aborted connection 23350 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.608188Z 23344 [Note] [MY-010914] [Server] Aborted connection 23344 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.608191Z 23343 [Note] [MY-010914] [Server] Aborted connection 23343 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.608226Z 23347 [Note] [MY-010914] [Server] Aborted connection 23347 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.608261Z 23352 [Note] [MY-010914] [Server] Aborted connection 23352 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.608295Z 23342 [Note] [MY-010914] [Server] Aborted connection 23342 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.608351Z 23345 [Note] [MY-010914] [Server] Aborted connection 23345 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.608397Z 23336 [Note] [MY-010914] [Server] Aborted connection 23336 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.608401Z 23335 [Note] [MY-010914] [Server] Aborted connection 23335 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.608518Z 23357 [Note] [MY-010914] [Server] Aborted connection 23357 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.608611Z 23333 [Note] [MY-010914] [Server] Aborted connection 23333 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.608618Z 23338 [Note] [MY-010914] [Server] Aborted connection 23338 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.608661Z 23353 [Note] [MY-010914] [Server] Aborted connection 23353 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.608675Z 23339 [Note] [MY-010914] [Server] Aborted connection 23339 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.608680Z 23331 [Note] [MY-010914] [Server] Aborted connection 23331 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.608702Z 23337 [Note] [MY-010914] [Server] Aborted connection 23337 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.608736Z 23329 [Note] [MY-010914] [Server] Aborted connection 23329 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.608766Z 23330 [Note] [MY-010914] [Server] Aborted connection 23330 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.608809Z 23327 [Note] [MY-010914] [Server] Aborted connection 23327 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.608815Z 23325 [Note] [MY-010914] [Server] Aborted connection 23325 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.608933Z 23324 [Note] [MY-010914] [Server] Aborted connection 23324 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.609015Z 23341 [Note] [MY-010914] [Server] Aborted connection 23341 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.609049Z 23319 [Note] [MY-010914] [Server] Aborted connection 23319 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.609150Z 23323 [Note] [MY-010914] [Server] Aborted connection 23323 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.609192Z 23332 [Note] [MY-010914] [Server] Aborted connection 23332 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.609207Z 23326 [Note] [MY-010914] [Server] Aborted connection 23326 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.609292Z 23317 [Note] [MY-010914] [Server] Aborted connection 23317 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.609457Z 23364 [Note] [MY-010914] [Server] Aborted connection 23364 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.609469Z 23322 [Note] [MY-010914] [Server] Aborted connection 23322 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.609570Z 23314 [Note] [MY-010914] [Server] Aborted connection 23314 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.609635Z 23318 [Note] [MY-010914] [Server] Aborted connection 23318 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.609636Z 23321 [Note] [MY-010914] [Server] Aborted connection 23321 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.609782Z 23316 [Note] [MY-010914] [Server] Aborted connection 23316 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.609795Z 23315 [Note] [MY-010914] [Server] Aborted connection 23315 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.609785Z 23340 [Note] [MY-010914] [Server] Aborted connection 23340 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.609813Z 23334 [Note] [MY-010914] [Server] Aborted connection 23334 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.609857Z 23309 [Note] [MY-010914] [Server] Aborted connection 23309 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.609889Z 23308 [Note] [MY-010914] [Server] Aborted connection 23308 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.609971Z 23307 [Note] [MY-010914] [Server] Aborted connection 23307 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.609973Z 23306 [Note] [MY-010914] [Server] Aborted connection 23306 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.610034Z 23320 [Note] [MY-010914] [Server] Aborted connection 23320 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.610054Z 23328 [Note] [MY-010914] [Server] Aborted connection 23328 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.610258Z 23305 [Note] [MY-010914] [Server] Aborted connection 23305 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.610286Z 23313 [Note] [MY-010914] [Server] Aborted connection 23313 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.610300Z 23310 [Note] [MY-010914] [Server] Aborted connection 23310 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.610408Z 23304 [Note] [MY-010914] [Server] Aborted connection 23304 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.610447Z 23311 [Note] [MY-010914] [Server] Aborted connection 23311 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.610493Z 23299 [Note] [MY-010914] [Server] Aborted connection 23299 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.610529Z 23302 [Note] [MY-010914] [Server] Aborted connection 23302 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.610548Z 23300 [Note] [MY-010914] [Server] Aborted connection 23300 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.610569Z 23312 [Note] [MY-010914] [Server] Aborted connection 23312 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.610614Z 23295 [Note] [MY-010914] [Server] Aborted connection 23295 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.610644Z 23292 [Note] [MY-010914] [Server] Aborted connection 23292 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.610721Z 23291 [Note] [MY-010914] [Server] Aborted connection 23291 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.610725Z 23290 [Note] [MY-010914] [Server] Aborted connection 23290 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.610770Z 23288 [Note] [MY-010914] [Server] Aborted connection 23288 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.610777Z 23286 [Note] [MY-010914] [Server] Aborted connection 23286 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.610867Z 23287 [Note] [MY-010914] [Server] Aborted connection 23287 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.610916Z 23303 [Note] [MY-010914] [Server] Aborted connection 23303 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.610943Z 23294 [Note] [MY-010914] [Server] Aborted connection 23294 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.610959Z 23297 [Note] [MY-010914] [Server] Aborted connection 23297 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.611029Z 23293 [Note] [MY-010914] [Server] Aborted connection 23293 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.611094Z 23298 [Note] [MY-010914] [Server] Aborted connection 23298 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.611112Z 23296 [Note] [MY-010914] [Server] Aborted connection 23296 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.611198Z 23280 [Note] [MY-010914] [Server] Aborted connection 23280 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.611220Z 23283 [Note] [MY-010914] [Server] Aborted connection 23283 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.611353Z 23285 [Note] [MY-010914] [Server] Aborted connection 23285 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.611356Z 23282 [Note] [MY-010914] [Server] Aborted connection 23282 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.611428Z 23284 [Note] [MY-010914] [Server] Aborted connection 23284 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.611579Z 23301 [Note] [MY-010914] [Server] Aborted connection 23301 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.611655Z 23277 [Note] [MY-010914] [Server] Aborted connection 23277 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.611685Z 23274 [Note] [MY-010914] [Server] Aborted connection 23274 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.611723Z 23276 [Note] [MY-010914] [Server] Aborted connection 23276 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.611741Z 23268 [Note] [MY-010914] [Server] Aborted connection 23268 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.611836Z 23278 [Note] [MY-010914] [Server] Aborted connection 23278 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.611892Z 23267 [Note] [MY-010914] [Server] Aborted connection 23267 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612019Z 23273 [Note] [MY-010914] [Server] Aborted connection 23273 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612032Z 23265 [Note] [MY-010914] [Server] Aborted connection 23265 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612075Z 23263 [Note] [MY-010914] [Server] Aborted connection 23263 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612107Z 23289 [Note] [MY-010914] [Server] Aborted connection 23289 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612189Z 23266 [Note] [MY-010914] [Server] Aborted connection 23266 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612351Z 23269 [Note] [MY-010914] [Server] Aborted connection 23269 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612359Z 23262 [Note] [MY-010914] [Server] Aborted connection 23262 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612376Z 23259 [Note] [MY-010914] [Server] Aborted connection 23259 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612419Z 23258 [Note] [MY-010914] [Server] Aborted connection 23258 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612500Z 23275 [Note] [MY-010914] [Server] Aborted connection 23275 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612557Z 23255 [Note] [MY-010914] [Server] Aborted connection 23255 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612561Z 23264 [Note] [MY-010914] [Server] Aborted connection 23264 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612558Z 23260 [Note] [MY-010914] [Server] Aborted connection 23260 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612576Z 23254 [Note] [MY-010914] [Server] Aborted connection 23254 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612560Z 23257 [Note] [MY-010914] [Server] Aborted connection 23257 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612596Z 23261 [Note] [MY-010914] [Server] Aborted connection 23261 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612707Z 23249 [Note] [MY-010914] [Server] Aborted connection 23249 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612709Z 23253 [Note] [MY-010914] [Server] Aborted connection 23253 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612740Z 23251 [Note] [MY-010914] [Server] Aborted connection 23251 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612820Z 23252 [Note] [MY-010914] [Server] Aborted connection 23252 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612830Z 23272 [Note] [MY-010914] [Server] Aborted connection 23272 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612965Z 23270 [Note] [MY-010914] [Server] Aborted connection 23270 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.612993Z 23247 [Note] [MY-010914] [Server] Aborted connection 23247 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.613016Z 23271 [Note] [MY-010914] [Server] Aborted connection 23271 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.613117Z 23245 [Note] [MY-010914] [Server] Aborted connection 23245 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.613171Z 23281 [Note] [MY-010914] [Server] Aborted connection 23281 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.613189Z 23256 [Note] [MY-010914] [Server] Aborted connection 23256 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.613194Z 23246 [Note] [MY-010914] [Server] Aborted connection 23246 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.613190Z 23248 [Note] [MY-010914] [Server] Aborted connection 23248 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.613200Z 23279 [Note] [MY-010914] [Server] Aborted connection 23279 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).
+2026-08-24T08:02:13.613281Z 23250 [Note] [MY-010914] [Server] Aborted connection 23250 to db: 'sbtest' user: 'root' host: '127.0.0.1' (Got an error reading communication packets).

@@ -1,0 +1,12 @@
+1787307450.700	Threadpool_idle_threads	408
+1787307450.700	Threadpool_threads	647
+1787307465.362	Threadpool_idle_threads	372
+1787307465.362	Threadpool_threads	643
+1787307467.123	Threadpool_idle_threads	368
+1787307467.123	Threadpool_threads	639
+1787307468.613	Threadpool_idle_threads	497
+1787307468.613	Threadpool_threads	639
+1787307469.819	Threadpool_idle_threads	558
+1787307469.819	Threadpool_threads	637
+1787307470.904	Threadpool_idle_threads	636
+1787307470.904	Threadpool_threads	637

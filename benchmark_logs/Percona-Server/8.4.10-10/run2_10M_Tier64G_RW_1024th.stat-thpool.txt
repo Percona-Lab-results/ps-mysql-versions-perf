@@ -1,0 +1,35 @@
+1787291993.472	Threadpool_average_hp_queue_wait_us	avg: 96.454, min: 0.000, max: 120031.000, dev: 330.974, cnt: 2630192022
+1787291993.472	Threadpool_average_queue_wait_us	avg: 155.094, min: 0.000, max: 24095075.000, dev: 26389.380, cnt: 293281643
+1787291993.472	Threadpool_idle_threads	320
+1787291993.472	Threadpool_requests_starved_in_queue	0
+1787291993.472	Threadpool_requests_waiting_in_hp_queue	0
+1787291993.472	Threadpool_requests_waiting_in_queue	589
+1787291993.472	Threadpool_threads	592
+1787292012.144	Threadpool_average_hp_queue_wait_us	avg: 96.454, min: 0.000, max: 120031.000, dev: 330.974, cnt: 2630192022
+1787292012.144	Threadpool_average_queue_wait_us	avg: 174.320, min: 0.000, max: 24742929.000, dev: 31881.356, cnt: 293341002
+1787292012.144	Threadpool_idle_threads	376
+1787292012.144	Threadpool_requests_starved_in_queue	0
+1787292012.144	Threadpool_requests_waiting_in_hp_queue	0
+1787292012.144	Threadpool_requests_waiting_in_queue	412
+1787292012.144	Threadpool_threads	592
+1787292019.372	Threadpool_average_hp_queue_wait_us	avg: 96.454, min: 0.000, max: 120031.000, dev: 330.974, cnt: 2630192022
+1787292019.372	Threadpool_average_queue_wait_us	avg: 189.155, min: 0.000, max: 28220910.000, dev: 35988.156, cnt: 293420959
+1787292019.372	Threadpool_idle_threads	542
+1787292019.372	Threadpool_requests_starved_in_queue	0
+1787292019.372	Threadpool_requests_waiting_in_hp_queue	0
+1787292019.372	Threadpool_requests_waiting_in_queue	91
+1787292019.372	Threadpool_threads	592
+1787292022.894	Threadpool_average_hp_queue_wait_us	avg: 96.454, min: 0.000, max: 120031.000, dev: 330.974, cnt: 2630192022
+1787292022.894	Threadpool_average_queue_wait_us	avg: 191.089, min: 0.000, max: 29052231.000, dev: 36534.983, cnt: 293447115
+1787292022.894	Threadpool_idle_threads	582
+1787292022.894	Threadpool_requests_starved_in_queue	0
+1787292022.894	Threadpool_requests_waiting_in_hp_queue	0
+1787292022.894	Threadpool_requests_waiting_in_queue	17
+1787292022.894	Threadpool_threads	592
+1787292024.163	Threadpool_average_hp_queue_wait_us	avg: 96.454, min: 0.000, max: 120031.000, dev: 330.974, cnt: 2630192022
+1787292024.163	Threadpool_average_queue_wait_us	avg: 191.228, min: 0.000, max: 29052231.000, dev: 36574.942, cnt: 293451526
+1787292024.163	Threadpool_idle_threads	591
+1787292024.163	Threadpool_requests_starved_in_queue	0
+1787292024.163	Threadpool_requests_waiting_in_hp_queue	0
+1787292024.163	Threadpool_requests_waiting_in_queue	0
+1787292024.163	Threadpool_threads	592

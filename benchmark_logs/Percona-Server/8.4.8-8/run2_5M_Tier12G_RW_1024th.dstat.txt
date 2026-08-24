@@ -1,0 +1,11 @@
+You did not select any stats, using -cdngy by default.
+----system---- ----total-usage---- -dsk/total- -net/total- ---paging-- ---system--
+     time     |usr sys idl wai stl| read  writ| recv  send|  in   out | int   csw 
+21-08 10:17:12|                   |           |           |           |           
+21-08 10:17:13| 95   2   3   0   0|  50M  234M| 240B   74B|   0     0 | 115k   48k
+21-08 10:17:14| 98   1   0   0   0|  50M  243M| 590B  482B|   0     0 | 108k   49k
+21-08 10:17:15| 94   3   3   0   0|  53M  283M| 465B  477B|   0     0 | 226k   62k
+21-08 10:17:16| 94   5   1   0   0|  53M  259M| 121B    0 |   0     0 | 385k   87k
+21-08 10:17:17| 66  31   2   0   0|  79M  355M|   0    74B|   0     0 |1175k  224k
+21-08 10:17:18| 30  58  11   0   0|  78M  361M| 120B    0 |   0     0 |1266k  279k
+21-08 10:17:19|  9   2  86   2   0| 140M  348M|   0     0 |   0     0 | 130k  115k
