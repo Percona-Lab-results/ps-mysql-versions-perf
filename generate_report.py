@@ -20,8 +20,9 @@ from collections import Counter
 from html import escape
 from pathlib import Path
 
+# Matches run<N>_<ROWS>_Tier<M>G_RW_<T>th and the older run<N>_Tier<M>G_RW_<T>th
 FILENAME_RE = re.compile(
-    r"^run(?P<run>\d+)_Tier(?P<mem>\d+)G_RW_(?P<threads>\d+)th\.sysbench\.txt$"
+    r"^run(?P<run>\d+)_(?:(?P<rows>\d+[KkMm]?)_)?Tier(?P<mem>\d+)G_RW_(?P<threads>\d+)th\.sysbench\.txt$"
 )
 TPS_RE = re.compile(r"transactions:\s*\d+\s*\(([0-9.]+)\s*per sec\.\)")
 QPS_RE = re.compile(r"queries:\s*\d+\s*\(([0-9.]+)\s*per sec\.\)")
@@ -46,7 +47,7 @@ def extract_rates(path: Path):
 def iter_sysbench_files(base_dir: Path):
     for server_dir in sorted(p for p in base_dir.iterdir() if p.is_dir()):
         for version_dir in sorted(p for p in server_dir.iterdir() if p.is_dir()):
-            for f in sorted(version_dir.glob("run*_Tier*G_RW_*th.sysbench.txt")):
+            for f in sorted(version_dir.glob("run*.sysbench.txt")):
                 m = FILENAME_RE.match(f.name)
                 if not m:
                     continue
@@ -67,12 +68,15 @@ def scan_runs(base_dir: Path):
         rows.append({
             "server": f"{server} {version}",
             "run": int(m.group("run")),
+            # Old-style file names carry no rows token; those runs used the 5M default
+            "rows": m.group("rows") or "5M",
+            "file": m.string[: -len(".sysbench.txt")],
             "mem_gb": int(m.group("mem")),
             "threads": int(m.group("threads")),
             "tps": round(tps, 2),
             "qps": round(qps, 2),
         })
-    rows.sort(key=lambda r: (r["server"], r["run"], r["mem_gb"], r["threads"]))
+    rows.sort(key=lambda r: (r["server"], r["run"], r["rows"], r["mem_gb"], r["threads"]))
     return rows, durations
 
 
@@ -128,17 +132,28 @@ def table_rows(pairs):
     return "\n              ".join(out)
 
 
+def rows_sort_key(label):
+    """Order rows labels by their numeric value: 500K < 5M < 10M."""
+    m = re.match(r"^(\d+)([KkMm]?)$", label)
+    if not m:
+        return (float("inf"), label)
+    mult = {"": 1, "k": 1000, "m": 1000000}[m.group(2).lower()]
+    return (int(m.group(1)) * mult, label)
+
+
 def build_data_block(rows):
     servers_sorted = sorted({r["server"] for r in rows})
     mems_sorted = sorted({r["mem_gb"] for r in rows})
     threads_sorted = sorted({r["threads"] for r in rows})
+    rows_values = sorted({r["rows"] for r in rows}, key=rows_sort_key)
 
     block = (
         f"const RUNS = {json.dumps(rows)};\n"
         f"const MEMS = {json.dumps(mems_sorted)};\n"
-        f"const THREADS = {json.dumps(threads_sorted)};"
+        f"const THREADS = {json.dumps(threads_sorted)};\n"
+        f"const ROWS_VALUES = {json.dumps(rows_values)};"
     )
-    return block, servers_sorted, mems_sorted, threads_sorted
+    return block, servers_sorted, mems_sorted, threads_sorted, rows_values
 
 
 TEMPLATE = """<!doctype html>
@@ -187,12 +202,15 @@ TEMPLATE = """<!doctype html>
     #dlOverlay.open { display: flex; }
     #dlModal {
       background: #fff; border-radius: 14px; padding: 24px 28px;
-      max-width: 580px; width: 94%; box-shadow: 0 8px 40px rgba(0,0,0,0.22);
-      position: relative;
+      max-width: 1100px; width: 94%; box-shadow: 0 8px 40px rgba(0,0,0,0.22);
+      position: relative; max-height: 88vh; overflow-y: auto;
     }
     #dlModal h3 { margin: 0 0 4px; font-size: 15px; color: #222; }
     #dlModal .subtitle { font-size: 12px; color: #888; margin-bottom: 16px; }
-    #dlModal .dl-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+    #dlModal .dl-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    @media (max-width: 760px) {
+      #dlModal .dl-list { grid-template-columns: 1fr; }
+    }
     #dlModal .dl-list li {
       display: flex; align-items: center; gap: 8px;
       padding: 9px 12px; border-radius: 9px; border: 1px solid #e0e0e0;
@@ -244,6 +262,8 @@ TEMPLATE = """<!doctype html>
           <select id="memSel" multiple></select>
         </div>
         <div>
+          <label for="rowsSel">Table rows (multi-select)</label>
+          <select id="rowsSel" multiple></select>
         </div>
       </div>
 
@@ -260,6 +280,7 @@ TEMPLATE = """<!doctype html>
       <div class="btnrow">
         <button id="allServersBtn">Select all servers</button>
         <button id="allMemsBtn">Select all memory</button>
+        <button id="allRowsBtn">Select all rows</button>
         <button id="resetBtn">Reset</button>
       </div>
 
@@ -359,16 +380,17 @@ function computeData() {
   if (VIEW_MODE === "individual") {
     return RUNS.map(r => ({
       server: `run${r.run}-${r.server.replace(/ /g, "-")}`,
-      mem_gb: r.mem_gb, threads: r.threads, tps: r.tps, qps: r.qps,
+      rows: r.rows, mem_gb: r.mem_gb, threads: r.threads, tps: r.tps, qps: r.qps,
+      file: r.file,
     }));
   }
-  // Average all runs per (server, mem, threads)
+  // Average all runs per (server, rows, mem, threads)
   const groups = new Map();
   RUNS.forEach(r => {
-    const key = `${r.server}|${r.mem_gb}|${r.threads}`;
+    const key = `${r.server}|${r.rows}|${r.mem_gb}|${r.threads}`;
     let g = groups.get(key);
     if (!g) {
-      g = {server: r.server, mem_gb: r.mem_gb, threads: r.threads, tps: [], qps: []};
+      g = {server: r.server, rows: r.rows, mem_gb: r.mem_gb, threads: r.threads, tps: [], qps: []};
       groups.set(key, g);
     }
     g.tps.push(r.tps);
@@ -376,7 +398,7 @@ function computeData() {
   });
   const mean = a => a.reduce((s, v) => s + v, 0) / a.length;
   return Array.from(groups.values()).map(g => ({
-    server: g.server, mem_gb: g.mem_gb, threads: g.threads,
+    server: g.server, rows: g.rows, mem_gb: g.mem_gb, threads: g.threads,
     tps: Math.round(mean(g.tps) * 100) / 100,
     qps: Math.round(mean(g.qps) * 100) / 100,
   }));
@@ -393,35 +415,40 @@ function buildTraces() {
 
   const selectedServers = getSelectedValues(el("serverSel"));
   const selectedMems = getSelectedValues(el("memSel")).map(numeric).filter(v => v !== null);
+  const selectedRows = getSelectedValues(el("rowsSel"));
 
   const servers = selectedServers.length ? selectedServers : [serverList()[0]];
   const mems = selectedMems.length ? selectedMems : [DEFAULT_MEM];
+  const rowsVals = selectedRows.length ? selectedRows : ROWS_VALUES;
 
   const traces = [];
 
   servers.forEach(server => {
     mems.forEach(mem => {
-      const pts = DATA
-        .filter(r => r.server === server && r.mem_gb === mem && r[metric] !== null)
-        .sort((a,b)=>a.threads-b.threads);
+      rowsVals.forEach(rows => {
+        const pts = DATA
+          .filter(r => r.server === server && r.mem_gb === mem && r.rows === rows && r[metric] !== null)
+          .sort((a,b)=>a.threads-b.threads);
 
-      if (!pts.length) return;
+        if (!pts.length) return;
 
-      traces.push({
-        type: "scatter",
-        mode: "lines+markers",
-        name: `${server} | ${mem}G`,
-        x: pts.map(p=>p.threads),
-        y: pts.map(p=>p[metric]),
-        customdata: pts.map(p=>({server: p.server, mem_gb: p.mem_gb, threads: p.threads, tps: p.tps, qps: p.qps})),
-        marker: { size: 10 },
-        hovertemplate:
-          '<b>%{customdata.server}</b><br>' +
-          'Memory: %{customdata.mem_gb}G<br>' +
-          'Threads: %{customdata.threads}<br>' +
-          'TPS: %{customdata.tps:,.0f}<br>' +
-          'QPS: %{customdata.qps:,.0f}' +
-          '<extra></extra>',
+        traces.push({
+          type: "scatter",
+          mode: "lines+markers",
+          name: `${server} | ${mem}G | ${rows} rows`,
+          x: pts.map(p=>p.threads),
+          y: pts.map(p=>p[metric]),
+          customdata: pts.map(p=>({server: p.server, rows: p.rows, mem_gb: p.mem_gb, threads: p.threads, tps: p.tps, qps: p.qps, file: p.file})),
+          marker: { size: 10 },
+          hovertemplate:
+            '<b>%{customdata.server}</b><br>' +
+            'Rows: %{customdata.rows}<br>' +
+            'Memory: %{customdata.mem_gb}G<br>' +
+            'Threads: %{customdata.threads}<br>' +
+            'TPS: %{customdata.tps:,.0f}<br>' +
+            'QPS: %{customdata.qps:,.0f}' +
+            '<extra></extra>',
+        });
       });
     });
   });
@@ -484,7 +511,8 @@ function makeListItem(ext, fname, url) {
   return li;
 }
 
-function showDownloadModal(server, mem_gb, threads, tps, qps) {
+function showDownloadModal(d) {
+  const server = d.server, mem_gb = d.mem_gb, threads = d.threads, tps = d.tps, qps = d.qps;
   const path = serverToPath(server);
 
   // Extract run number if server name includes it (e.g., "run2-Percona-Server-8.4.10-10")
@@ -497,14 +525,14 @@ function showDownloadModal(server, mem_gb, threads, tps, qps) {
   document.getElementById('dlTitle').textContent = displayServer;
   document.getElementById('dlSubtitle').textContent =
     isIndividualRun
-      ? `Run: ${runNum}  ·  Memory: ${mem_gb}G  ·  Threads: ${threads}  ·  TPS: ${tps.toLocaleString()}  ·  QPS: ${qps.toLocaleString()}`
-      : `Memory: ${mem_gb}G  ·  Threads: ${threads}  ·  Average TPS: ${tps.toLocaleString()}  ·  Average QPS: ${qps.toLocaleString()}`;
+      ? `Run: ${runNum}  ·  Rows: ${d.rows}  ·  Memory: ${mem_gb}G  ·  Threads: ${threads}  ·  TPS: ${tps.toLocaleString()}  ·  QPS: ${qps.toLocaleString()}`
+      : `Rows: ${d.rows}  ·  Memory: ${mem_gb}G  ·  Threads: ${threads}  ·  Average TPS: ${tps.toLocaleString()}  ·  Average QPS: ${qps.toLocaleString()}`;
   const list = document.getElementById('dlLinks');
   list.innerHTML = '';
 
   // For individual runs, show run-specific files; for average view, only per-tier files
   if (isIndividualRun) {
-    const fileBase = `run${runNum}_Tier${mem_gb}G_RW_${threads}th`;
+    const fileBase = d.file || `run${runNum}_Tier${mem_gb}G_RW_${threads}th`;
     LOG_EXTS.forEach(ext => {
       const fname = `${fileBase}.${ext}`;
       const url = `${BASE_URL}/${path}/${fname}`;
@@ -534,7 +562,7 @@ function attachPlotlyClick() {
     const pt = eventData.points[0];
     const d = pt.customdata;
     if (!d) return;
-    showDownloadModal(d.server, d.mem_gb, d.threads, d.tps, d.qps);
+    showDownloadModal(d);
   });
 }
 
@@ -551,11 +579,13 @@ function refreshServers() {
 function init() {
   refreshServers();
   fillOptions(el("memSel"), MEMS, (v)=>`${v}G`);
+  fillOptions(el("rowsSel"), ROWS_VALUES);
 
-  // Default memory tier selected by default
+  // Default memory tier and all rows values selected by default
   setSelected(el("memSel"), v => Number(v) === DEFAULT_MEM);
+  setSelected(el("rowsSel"), _ => true);
 
-  ["serverSel","memSel"].forEach(id => {
+  ["serverSel","memSel","rowsSel"].forEach(id => {
     el(id).addEventListener("change", render);
   });
 
@@ -570,9 +600,11 @@ function init() {
 
   el("allServersBtn").addEventListener("click", () => { setSelected(el("serverSel"), _ => true); render(); });
   el("allMemsBtn").addEventListener("click", () => { setSelected(el("memSel"), _ => true); render(); });
+  el("allRowsBtn").addEventListener("click", () => { setSelected(el("rowsSel"), _ => true); render(); });
   el("resetBtn").addEventListener("click", () => {
     setSelected(el("serverSel"), _ => true);
     setSelected(el("memSel"), v => Number(v) === DEFAULT_MEM);
+    setSelected(el("rowsSel"), _ => true);
     render();
   });
 
@@ -639,17 +671,17 @@ def main():
     if not rows:
         sys.exit(f"No valid sysbench data found under '{base_dir}'")
 
-    run_counts = Counter((r["server"], r["mem_gb"], r["threads"]) for r in rows)
+    run_counts = Counter((r["server"], r["rows"], r["mem_gb"], r["threads"]) for r in rows)
     max_runs = max(run_counts.values())
-    for (server, mem, threads), count in sorted(run_counts.items()):
+    for (server, rows_label, mem, threads), count in sorted(run_counts.items()):
         if count < max_runs:
             print(
                 f"  warning: only {count}/{max_runs} run(s) for "
-                f"{server} mem={mem}G threads={threads}",
+                f"{server} rows={rows_label} mem={mem}G threads={threads}",
                 file=sys.stderr,
             )
 
-    data_block, servers, mems, threads = build_data_block(rows)
+    data_block, servers, mems, threads, rows_values = build_data_block(rows)
 
     # System info table from pt-summary output
     sys_info = parse_pt_summary(base_dir)
@@ -670,6 +702,7 @@ def main():
         ("Servers compared", ", ".join(servers)),
         ("Memory tiers (innodb_buffer_pool_size)",
          ", ".join(f"{m} GB" for m in mems)),
+        ("Table rows variants", ", ".join(rows_values)),
         ("Client threads", ", ".join(str(t) for t in threads)),
         ("Metric", "Transactions per second (TPS); QPS shown in hover tooltips"),
     ]
@@ -690,6 +723,7 @@ def main():
     print(f"Done. Report written to: {output_file}")
     print(f"  Servers : {len(servers)}")
     print(f"  Memories: {', '.join(str(m) for m in mems)}")
+    print(f"  Rows    : {', '.join(rows_values)}")
     print(f"  Threads : {', '.join(str(t) for t in threads)}")
     print(f"  Records : {len(rows)} individual runs (up to {max_runs} per configuration)")
 
