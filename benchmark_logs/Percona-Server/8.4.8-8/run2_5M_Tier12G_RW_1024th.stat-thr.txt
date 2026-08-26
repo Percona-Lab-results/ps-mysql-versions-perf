@@ -1,8 +1,0 @@
-1787307432.598	Threads_cached	0
-1787307432.598	Threads_connected	938
-1787307432.598	Threads_created	1312
-1787307432.598	Threads_running	3
-1787307440.140	Threads_cached	0
-1787307440.140	Threads_connected	938
-1787307440.140	Threads_created	1312
-1787307440.140	Threads_running	2

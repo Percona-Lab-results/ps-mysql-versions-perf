@@ -1,8 +1,0 @@
-1787298804.836	Threadpool_idle_threads	384
-1787298804.836	Threadpool_threads	591
-1787298819.941	Threadpool_idle_threads	414
-1787298819.941	Threadpool_threads	591
-1787298823.454	Threadpool_idle_threads	494
-1787298823.454	Threadpool_threads	590
-1787298825.135	Threadpool_idle_threads	587
-1787298825.135	Threadpool_threads	589

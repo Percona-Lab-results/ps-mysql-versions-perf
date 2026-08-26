@@ -1,4 +1,0 @@
-1787323542.964	Threadpool_idle_threads	550
-1787323542.964	Threadpool_threads	560
-1787323568.714	Threadpool_idle_threads	556
-1787323568.714	Threadpool_threads	557

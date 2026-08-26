@@ -60,22 +60,38 @@ def iter_sysbench_files(base_dir: Path):
 
 def scan_runs(base_dir: Path):
     """One entry per individual run; averaging happens client-side in the report."""
-    rows = []
-    durations = []
+    # The same run can exist under both its old-style name (no rows token,
+    # meaning the 5M default) and its renamed new-style one; keep a single
+    # entry per logical run, preferring the file with the explicit rows token.
+    entries = {}
     for server, version, m, (tps, qps, duration) in iter_sysbench_files(base_dir):
-        if duration:
-            durations.append(duration)
-        rows.append({
-            "server": f"{server} {version}",
-            "run": int(m.group("run")),
-            # Old-style file names carry no rows token; those runs used the 5M default
-            "rows": m.group("rows") or "5M",
-            "file": m.string[: -len(".sysbench.txt")],
-            "mem_gb": int(m.group("mem")),
-            "threads": int(m.group("threads")),
-            "tps": round(tps, 2),
-            "qps": round(qps, 2),
-        })
+        explicit_rows = m.group("rows") is not None
+        key = (server, version, int(m.group("run")),
+               m.group("rows") or "5M", int(m.group("mem")), int(m.group("threads")))
+        prev = entries.get(key)
+        if prev is not None:
+            old_name = m.string if prev["explicit_rows"] else prev["row"]["file"] + ".sysbench.txt"
+            print(f"  duplicate run (old-style name ignored): {server}/{version}/{old_name}",
+                  file=sys.stderr)
+            if prev["explicit_rows"]:
+                continue
+        entries[key] = {
+            "explicit_rows": explicit_rows,
+            "duration": duration,
+            "row": {
+                "server": f"{server} {version}",
+                "run": int(m.group("run")),
+                # Old-style file names carry no rows token; those runs used the 5M default
+                "rows": m.group("rows") or "5M",
+                "file": m.string[: -len(".sysbench.txt")],
+                "mem_gb": int(m.group("mem")),
+                "threads": int(m.group("threads")),
+                "tps": round(tps, 2),
+                "qps": round(qps, 2),
+            },
+        }
+    rows = [e["row"] for e in entries.values()]
+    durations = [e["duration"] for e in entries.values() if e["duration"]]
     rows.sort(key=lambda r: (r["server"], r["run"], r["rows"], r["mem_gb"], r["threads"]))
     return rows, durations
 
