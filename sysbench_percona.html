@@ -34,6 +34,14 @@
     button { padding: 8px 10px; border-radius: 10px; border: 1px solid #ccc; background: #f7f7f7; cursor: pointer; }
     button:hover { background: #eee; }
     #chart { height: 620px; cursor: crosshair; }
+    #tableView { max-height: 620px; overflow: auto; }
+    #tableView table { border-collapse: collapse; width: 100%; font-family: monospace; font-size: 13px; }
+    #tableView th, #tableView td { border: 1px solid #ccc; padding: 5px 10px; text-align: right; white-space: nowrap; }
+    #tableView th { background: #e8eaf0; color: #555; position: sticky; top: 0; }
+    #tableView th.name, #tableView td.name { text-align: left; }
+    #tableView td.pt { cursor: pointer; }
+    #tableView td.pt:hover { background: #e8f0fe; }
+    #tableView .caption { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; color: #333; margin: 4px 0 8px; }
 
     /* Download modal */
     #dlOverlay {
@@ -119,6 +127,16 @@
         </label>
       </div>
 
+      <label>Display</label>
+      <div style="display: flex; gap: 16px;">
+        <label style="font-weight: 400; display: flex; align-items: center; gap: 6px; margin: 0;">
+          <input type="radio" name="displayMode" value="graph" checked> Graph
+        </label>
+        <label style="font-weight: 400; display: flex; align-items: center; gap: 6px; margin: 0;">
+          <input type="radio" name="displayMode" value="table"> Table
+        </label>
+      </div>
+
       <div class="btnrow">
         <button id="allServersBtn">Select all servers</button>
         <button id="allMemsBtn">Select all memory</button>
@@ -129,11 +147,13 @@
       <div class="hint">
         Chart overlays selected servers at selected memory values. Missing points are omitted automatically.
         Click a data point to download its log files.
+        Shareable URL parameters: <code>?display=graph|table&amp;mem=4,32</code> (or <code>mem=all</code>).
       </div>
     </div>
 
     <div class="card">
       <div id="chart"></div>
+      <div id="tableView" style="display: none;"></div>
       <div style="margin-top: 14px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
         <div>
           <div style="font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; margin-bottom: 6px; color: #333;">
@@ -233,6 +253,7 @@ function numeric(v) {
 const DEFAULT_MEM = MEMS.includes(12) ? 12 : MEMS[0];
 
 let VIEW_MODE = "average";
+let DISPLAY_MODE = "graph";
 
 function computeData() {
   if (VIEW_MODE === "individual") {
@@ -268,9 +289,9 @@ function serverList() {
   return [...new Set(DATA.map(r => r.server))].sort();
 }
 
-function buildTraces() {
-  const metric = "tps";
-
+// Series matching the current selection: one per (server, mem, rows) with data.
+// Shared by the graph and the table views.
+function selectedSeries() {
   const selectedServers = getSelectedValues(el("serverSel"));
   const selectedMems = getSelectedValues(el("memSel")).map(numeric).filter(v => v !== null);
   const selectedRows = getSelectedValues(el("rowsSel"));
@@ -279,39 +300,96 @@ function buildTraces() {
   const mems = selectedMems.length ? selectedMems : [DEFAULT_MEM];
   const rowsVals = selectedRows.length ? selectedRows : ROWS_VALUES;
 
-  const traces = [];
-
+  const series = [];
   servers.forEach(server => {
     mems.forEach(mem => {
       rowsVals.forEach(rows => {
         const pts = DATA
-          .filter(r => r.server === server && r.mem_gb === mem && r.rows === rows && r[metric] !== null)
+          .filter(r => r.server === server && r.mem_gb === mem && r.rows === rows && r.tps !== null)
           .sort((a,b)=>a.threads-b.threads);
 
         if (!pts.length) return;
-
-        traces.push({
-          type: "scatter",
-          mode: "lines+markers",
-          name: `${server} | ${mem}G | ${rows} rows`,
-          x: pts.map(p=>p.threads),
-          y: pts.map(p=>p[metric]),
-          customdata: pts.map(p=>({server: p.server, rows: p.rows, mem_gb: p.mem_gb, threads: p.threads, tps: p.tps, qps: p.qps, file: p.file})),
-          marker: { size: 10 },
-          hovertemplate:
-            '<b>%{customdata.server}</b><br>' +
-            'Rows: %{customdata.rows}<br>' +
-            'Memory: %{customdata.mem_gb}G<br>' +
-            'Threads: %{customdata.threads}<br>' +
-            'TPS: %{customdata.tps:,.0f}<br>' +
-            'QPS: %{customdata.qps:,.0f}' +
-            '<extra></extra>',
-        });
+        series.push({ name: `${server} | ${mem}G | ${rows} rows`, pts });
       });
     });
   });
+  return series;
+}
 
-  return traces;
+function buildTraces() {
+  const metric = "tps";
+
+  return selectedSeries().map(s => ({
+    type: "scatter",
+    mode: "lines+markers",
+    name: s.name,
+    x: s.pts.map(p=>p.threads),
+    y: s.pts.map(p=>p[metric]),
+    customdata: s.pts.map(p=>({server: p.server, rows: p.rows, mem_gb: p.mem_gb, threads: p.threads, tps: p.tps, qps: p.qps, file: p.file})),
+    marker: { size: 10 },
+    hovertemplate:
+      '<b>%{customdata.server}</b><br>' +
+      'Rows: %{customdata.rows}<br>' +
+      'Memory: %{customdata.mem_gb}G<br>' +
+      'Threads: %{customdata.threads}<br>' +
+      'TPS: %{customdata.tps:,.0f}<br>' +
+      'QPS: %{customdata.qps:,.0f}' +
+      '<extra></extra>',
+  }));
+}
+
+// TPS table: one row per (server, mem, rows) series, one column per thread count.
+// Cells open the same download modal as clicking a graph point.
+function buildTable() {
+  const container = el("tableView");
+  container.innerHTML = "";
+
+  const caption = document.createElement("div");
+  caption.className = "caption";
+  caption.textContent = "Transactions per second (TPS) by client threads";
+  container.appendChild(caption);
+
+  const table = document.createElement("table");
+  const thead = document.createElement("thead");
+  const headRow = document.createElement("tr");
+  const nameTh = document.createElement("th");
+  nameTh.className = "name";
+  nameTh.textContent = "Server | Memory | Rows";
+  headRow.appendChild(nameTh);
+  THREADS.forEach(t => {
+    const th = document.createElement("th");
+    th.textContent = `${t} th`;
+    headRow.appendChild(th);
+  });
+  thead.appendChild(headRow);
+  table.appendChild(thead);
+
+  const tbody = document.createElement("tbody");
+  selectedSeries().forEach(s => {
+    const tr = document.createElement("tr");
+    const nameTd = document.createElement("td");
+    nameTd.className = "name";
+    nameTd.textContent = s.name;
+    tr.appendChild(nameTd);
+
+    const byThreads = new Map(s.pts.map(p => [p.threads, p]));
+    THREADS.forEach(t => {
+      const td = document.createElement("td");
+      const p = byThreads.get(t);
+      if (p) {
+        td.className = "pt";
+        td.textContent = Math.round(p.tps).toLocaleString();
+        td.title = `TPS: ${p.tps.toLocaleString()}  QPS: ${p.qps.toLocaleString()} (click for log files)`;
+        td.addEventListener("click", () => showDownloadModal(p));
+      } else {
+        td.textContent = "\u2014";
+      }
+      tr.appendChild(td);
+    });
+    tbody.appendChild(tr);
+  });
+  table.appendChild(tbody);
+  container.appendChild(table);
 }
 
 function layoutForMode() {
@@ -430,9 +508,52 @@ function attachPlotlyClick() {
   });
 }
 
+// URL parameters: ?display=graph|table & mem=<tier>[,<tier>...]|all (e.g. ?display=table&mem=4,32)
+function applyUrlParams() {
+  const params = new URLSearchParams(window.location.search);
+
+  const display = params.get("display");
+  if (display === "graph" || display === "table") {
+    DISPLAY_MODE = display;
+    const radio = document.querySelector(`input[name="displayMode"][value="${display}"]`);
+    if (radio) radio.checked = true;
+  }
+
+  const mem = params.get("mem");
+  if (mem) {
+    if (mem.toLowerCase() === "all") {
+      setSelected(el("memSel"), _ => true);
+    } else {
+      // Accept "4" and "4G" alike
+      const wanted = new Set(mem.split(",").map(s => s.trim().replace(/[Gg]$/, "")));
+      if (MEMS.some(m => wanted.has(String(m)))) {
+        setSelected(el("memSel"), v => wanted.has(v));
+      }
+    }
+  }
+}
+
+function syncUrl() {
+  const params = new URLSearchParams(window.location.search);
+  params.set("display", DISPLAY_MODE);
+  const mems = getSelectedValues(el("memSel"));
+  params.set("mem", mems.length === MEMS.length ? "all" : mems.join(","));
+  try {
+    history.replaceState(null, "", `${window.location.pathname}?${params}`);
+  } catch (e) { /* file:// in some browsers forbids replaceState */ }
+}
+
 function render() {
-  Plotly.react("chart", buildTraces(), layoutForMode(), {responsive: true})
-    .then(attachPlotlyClick);
+  syncUrl();
+  const graph = DISPLAY_MODE === "graph";
+  el("chart").style.display = graph ? "" : "none";
+  el("tableView").style.display = graph ? "none" : "";
+  if (graph) {
+    Plotly.react("chart", buildTraces(), layoutForMode(), {responsive: true})
+      .then(attachPlotlyClick);
+  } else {
+    buildTable();
+  }
 }
 
 function refreshServers() {
@@ -462,6 +583,13 @@ function init() {
     });
   });
 
+  document.querySelectorAll('input[name="displayMode"]').forEach(radio => {
+    radio.addEventListener("change", () => {
+      DISPLAY_MODE = radio.value;
+      render();
+    });
+  });
+
   el("allServersBtn").addEventListener("click", () => { setSelected(el("serverSel"), _ => true); render(); });
   el("allMemsBtn").addEventListener("click", () => { setSelected(el("memSel"), _ => true); render(); });
   el("allRowsBtn").addEventListener("click", () => { setSelected(el("rowsSel"), _ => true); render(); });
@@ -472,12 +600,15 @@ function init() {
     render();
   });
 
-  // Radios are unaffected by page reload state; sync VIEW_MODE with the checked one
+  // Radios are unaffected by page reload state; sync modes with the checked ones
   const checked = document.querySelector('input[name="viewMode"]:checked');
   if (checked) VIEW_MODE = checked.value;
+  const checkedDisplay = document.querySelector('input[name="displayMode"]:checked');
+  if (checkedDisplay) DISPLAY_MODE = checkedDisplay.value;
   DATA = computeData();
   refreshServers();
 
+  applyUrlParams();
   render();
 }
 
