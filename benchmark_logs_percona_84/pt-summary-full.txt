@@ -1,0 +1,113 @@
+# Percona Toolkit System Summary Report ######################
+        Date | 2026-08-25 01:16:11 UTC (local TZ: UTC +0000)
+    Hostname | beast-node7.tp.int.percona.com
+      Uptime | 441 days,  2:34,  5 users,  load average: 0.00, 0.00, 0.00
+    Platform | Linux
+     Release | Ubuntu 24.04 LTS (noble)
+      Kernel | 6.8.0-60-generic
+Architecture | CPU = 64-bit, OS = 64-bit
+   Threading | NPTL 2.39
+     SELinux | No SELinux detected
+ Virtualized | No virtualization detected
+# Processor ##################################################
+  Processors | physical = 2, cores = 40, virtual = 80, hyperthreading = yes
+      Speeds | 1x2399.968, 2x2399.969, 1x2399.970, 1x2399.971, 2x2399.972, 1x2399.975, 1x2399.977, 1x2399.978, 2x2399.982, 2x2399.989, 4x2399.991, 1x2399.992, 1x2399.993, 3x2399.995, 6x2399.996, 3x2399.997, 5x2399.998, 4x2399.999, 3x2400.000, 5x2400.001, 4x2400.002, 2x2400.003, 1x2400.004, 1x2400.007, 1x2400.008, 1x2400.009, 1x2400.010, 1x2400.015, 1x2400.016, 1x2400.017, 1x2400.018, 1x2400.020, 1x2400.021, 3x2400.023, 2x2400.024, 3x2400.025, 2x2400.026, 2x2400.029, 1x2400.030, 1x2400.032
+      Models | 80xIntel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+      Caches | 80x28160 KB
+  Designation               Configuration                  Size     Associativity
+  ========================= ============================== ======== ======================
+# Memory #####################################################
+         Total | 187.5G
+          Free | 136.3G
+          Used | physical = 4.0G, swap allocated = 8.0G, swap used = 374.2M, virtual = 4.4G
+        Shared | 9.8M
+       Buffers | 48.7G
+        Caches | 183.5G
+         Dirty | 252 kB
+       UsedRSS | 707.8M
+    Swappiness | 60
+   DirtyPolicy | 20, 10
+   DirtyStatus | 0, 0
+    Numa Nodes | 2
+   Numa Policy | default
+Preferred Node | current
+   Node    Size        Free        CPUs
+   ====    ====        ====        ====
+   node1   96748 MB    77258 MB    20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 
+   node0   95288 MB    62262 MB    0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 
+
+  Locator   Size     Speed             Form Factor   Type          Type Detail
+  ========= ======== ================= ============= ============= ===========
+# Mounted Filesystems ########################################
+  Filesystem      Size Used Type     Opts                                                                                                 Mountpoint
+  /dev/nvme0n1p1  2.9T  61% ext4     rw,relatime                                                                                          /mnt/nvme
+  /dev/nvme0n1p1  2.9T  61% ext4     rw,relatime                                                                                          /mnt/nvme
+  /dev/sda1       1.1G   1% vfat     rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro /boot/efi
+  /dev/sda2        98G   1% ext4     rw,relatime                                                                                          /boot
+  /dev/sda3       780G  25% ext4     rw,relatime                                                                                          /
+  efivarfs        512K   8% efivarfs rw,nosuid,nodev,noexec,relatime                                                                      /sys/firmware/efi/efivars
+  tmpfs            19G   1% tmpfs    rw,nosuid,nodev,inode64                                                                              /run/user/955676158
+  tmpfs            19G   1% tmpfs    rw,nosuid,nodev,noexec,relatime,size=5120k,inode64                                                   /run/user/955676158
+  tmpfs            19G   1% tmpfs    rw,nosuid,nodev,noexec,relatime,size=19664612k,mode=755,inode64                                      /run/user/955676158
+  tmpfs            19G   1% tmpfs    rw,nosuid,nodev,relatime,size=19664612k,nr_inodes=4916153,mode=700,uid=955676158,gid=10000,inode64   /run/user/955676158
+  tmpfs            19G   1% tmpfs    rw,nosuid,nodev,inode64                                                                              /run
+  tmpfs            19G   1% tmpfs    rw,nosuid,nodev,noexec,relatime,size=5120k,inode64                                                   /run
+  tmpfs            19G   1% tmpfs    rw,nosuid,nodev,noexec,relatime,size=19664612k,mode=755,inode64                                      /run
+  tmpfs            19G   1% tmpfs    rw,nosuid,nodev,relatime,size=19664612k,nr_inodes=4916153,mode=700,uid=955676158,gid=10000,inode64   /run
+  tmpfs           5.0M   0% tmpfs    rw,nosuid,nodev,inode64                                                                              /run/lock
+  tmpfs           5.0M   0% tmpfs    rw,nosuid,nodev,noexec,relatime,size=5120k,inode64                                                   /run/lock
+  tmpfs           5.0M   0% tmpfs    rw,nosuid,nodev,noexec,relatime,size=19664612k,mode=755,inode64                                      /run/lock
+  tmpfs           5.0M   0% tmpfs    rw,nosuid,nodev,relatime,size=19664612k,nr_inodes=4916153,mode=700,uid=955676158,gid=10000,inode64   /run/lock
+  tmpfs            94G   0% tmpfs    rw,nosuid,nodev,inode64                                                                              /dev/shm
+  tmpfs            94G   0% tmpfs    rw,nosuid,nodev,noexec,relatime,size=5120k,inode64                                                   /dev/shm
+  tmpfs            94G   0% tmpfs    rw,nosuid,nodev,noexec,relatime,size=19664612k,mode=755,inode64                                      /dev/shm
+  tmpfs            94G   0% tmpfs    rw,nosuid,nodev,relatime,size=19664612k,nr_inodes=4916153,mode=700,uid=955676158,gid=10000,inode64   /dev/shm
+# Disk Schedulers And Queue Size #############################
+     nvme0n1 | [none] 1023
+         sda | [mq-deadline] 64
+# Disk Partitioning ##########################################
+# Kernel Inode State #########################################
+dentry-state | 141216	126055	45	0	62022	0
+     file-nr | 3232	0	9223372036854775807
+    inode-nr | 116971	38109
+# LVM Volumes ################################################
+Unable to collect information
+# LVM Volume Groups ##########################################
+Unable to collect information
+# RAID Controller ############################################
+  Controller | No RAID controller detected
+# Network Config #############################################
+  Controller | Intel Corporation Ethernet Controller X550 (rev 01)
+  Controller | Intel Corporation Ethernet Controller X550 (rev 01)
+ FIN Timeout | 60
+  Port Range | 60999
+# Interface Statistics #######################################
+  interface  rx_bytes rx_packets  rx_errors   tx_bytes tx_packets  tx_errors
+  ========= ========= ========== ========== ========== ========== ==========
+  lo       150000000000000 150000000000          0 150000000000000 150000000000          0
+  enp94s0f0 1750000000   20000000          0   35000000     150000          0
+  enp94s0f1 90000000000  250000000          0 80000000000  225000000          0
+  docker0    50000000    1000000          0 4500000000    1750000          0
+# Network Devices ############################################
+  Device    Speed     Duplex
+  ========= ========= =========
+  enp94s0f0  10000Mb/s  Full      
+  enp94s0f1  10000Mb/s  Full      
+  docker0    Unknown!   Unknown!  
+# Top Processes ##############################################
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+2692464 bogdan.+  20   0   22432   6400   4480 R  16.7   0.0   0:00.03 top
+      1 root      20   0   22892  13440   7680 S   8.3   0.0 111:11.42 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:42.40 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+# Notable Processes ##########################################
+  PID    OOM    COMMAND
+    ?      ?    sshd doesn't appear to be running
+# Memory management ##########################################
+Transparent huge pages are enabled.
+# The End ####################################################
