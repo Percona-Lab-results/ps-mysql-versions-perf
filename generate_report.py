@@ -484,6 +484,12 @@ function layoutForMode() {
       ticktext: THREADS.map(String),
     },
     yaxis: { title: yTitle, rangemode: 'tozero' },
+    legend: {
+      x: 0.02, y: 0.98,
+      xanchor: "left", yanchor: "top",
+      bgcolor: "rgba(255,255,255,0.75)",
+      bordercolor: "#ddd", borderwidth: 1,
+    },
     margin: { l: 70, r: 20, t: 60, b: 60 },
     hovermode: "closest",
     hoverlabel: {
